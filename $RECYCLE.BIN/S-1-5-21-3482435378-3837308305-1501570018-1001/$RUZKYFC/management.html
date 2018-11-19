@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>知识管理平台</title>
+
+	<!-- Bootstrap -->
+	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/management.css"/>
+	<script src="js/mask.js" type="text/javascript" charset="utf-8"></script>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img class="log" src="image/n_c/log.png"/></a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class=" addActive"><a href="newTemplate.html">课前备课 </a></li>
+				<li class="addActive active"><a href="management.html">学员管理</a></li>
+				<li class="addActive"><a href="plan.html">学习计划维护</a></li>
+				<li class="addActive  "><a href="print.html">打印管理</a></li>
+				<li class="addActive"><a href="correction.html">作业批改</a></li>
+				<li class="addActive"><a href="javascript:;">难题解答</a><span class="nav-bedge ">更新2张</span></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><img class="headicon" src="image/ssj_qrcode.png"/></a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle headname" data-toggle="dropdown" role="button"
+					   aria-haspopup="true" aria-expanded="false">李老师 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="logout"><img src="image/out.png"/><span>退出</span></a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+	<div class="row padding">
+		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+			<div class="card">
+				<div class="card-btn">
+					<div class="card-btn-text" id="newmodel">新增学员档案</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+			<div class="row card">
+				<div class="nodata">
+					<img src="image/nodata_2.png"/>
+					<p>您还没有学员</p>
+				</div>
+				<div class="search-container clearfix">
+					<div class="input-group pull-left">
+						<input type="text" class="form-control search-input" placeholder="输入会员姓名" aria-describedby="basic-addon2">
+					</div>
+					<div class="btn-group pull-left">
+						<div class="search-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="search-text-gray">所在年级 </span>
+							<!--<span class="search-text">一年级</span>-->
+						</div>
+						<ul class="dropdown-menu">
+							<li><a href="#">一年级</a></li>
+							<li><a href="#">二年级</a></li>
+							<li><a href="#">三年级</a></li>
+							<li><a href="#">四年级</a></li>
+							<li><a href="#">五年级</a></li>
+							<li><a href="#">六年级</a></li>
+							<li><a href="#">七年级</a></li>
+							<li><a href="#">八年级</a></li>
+							<li><a href="#">九年级</a></li>
+						</ul>
+					</div>
+					<div class="search-submit pull-left">搜索</div>
+				</div>
+				<div id="wrapper">
+					<div class="clearfix">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-title">序号</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-title">学员姓名</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-title">所在年级</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-title">性格特征</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-title">教学建议</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-title">能力达标要求</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-title">入学时间</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-title">当前学习计划进度</div>
+					</div>
+					<div class="list clearfix">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>1</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>陈彦</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>高一</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>增强学习技能训练</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>稳步提升</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>2018-03-29</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="text-gray">尚未制定学习计划</div>
+								<div class="btn-yellow"><span>+创建学习计划</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="list clearfix">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>2</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>陈彦</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>高一</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>增强学习技能训练</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>稳步提升</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>2018-03-29</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="text-gray">尚未制定学习计划</div>
+								<div class="btn-yellow"><span>+创建学习计划</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="list clearfix">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>3</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>陈彦</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>高一</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>增强学习技能训练</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>稳步提升</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>2018-03-29</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="col-lg-9 col-md-8 col-sm-8 col-xs-6 padding1">
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+											<span class="sr-only">50%</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 padding1 color-green">50%</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding1 text-yellow">查看学习计划详情>></div>
+							</div>
+						</div>
+					</div>
+					<div class="list clearfix">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>4</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>陈彦</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>高一</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>增强学习技能训练</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>稳步提升</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>2018-03-29</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="text-gray">尚未制定学习计划</div>
+								<div class="btn-yellow"><span>+创建学习计划</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="list clearfix">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>5</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>陈彦</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>高一</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="btn-blue">
+									<span>善于交际际</span>
+									<div class="btn-text">safsdfasfsafsfsafsaf fsf</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>增强学习技能训练</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li"><p>稳步提升</p></div>
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 list-li"><p>2018-03-29</p></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 list-li">
+							<div>
+								<div class="text-gray">尚未制定学习计划</div>
+								<div class="btn-yellow"><span>+创建学习计划</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination-container clearfix">
+					<ul class="pagination pull-right">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">上一页</span>
+							</a>
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">...</a></li>
+						<li><a href="#">53</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">下一页</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

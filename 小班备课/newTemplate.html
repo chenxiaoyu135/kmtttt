@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>知识管理平台</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/newTemplate.css"/>
+
+    <script src="js/mask.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部内容-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="log" src="image/n_c/log.png"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active  addActive"><a href="newTemplate.html">课前备课 </a></li>
+                <li  class="addActive"><a href="management.html">学员管理</a></li>
+                <li class="addActive" ><a href="plan.html"  >学习计划维护</a></li>
+                <li class="addActive" ><a href="print.html" >打印管理</a></li>
+                <li class="addActive"><a href="correction.html" >作业批发</a></li>
+                <li class="addActive"><a href="javascript:;" >难题解答</a><span class="nav-bedge ">更新2张</span></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><img class="headicon" src="image/ssj_qrcode.png"/></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle headname" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">李老师 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="logout"><img src="image/out.png"/><span>退出</span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--主体内容-->
+<div class="container">
+    <div class="row padding">
+        <div class="row-list"><span class="list-xtitle"><img src="image/n_c/card2.png">已备课</span></div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-btn">
+                    <div class="card-btn-text" id="newmodel"><a href="addNotes.html">创建小班备课模版</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <div class="row card">
+                <div class="year"><span class="date">2018年</span>
+                    <div class="row-right  "><span class="glyphicon  glyphicon-menu-left"></span><span>3月24日</span><span
+                            class="glyphicon glyphicon-menu-right"></span></div>
+                </div>
+                <ul class="list-li-head">
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head3.jpg"></div>
+                        <span>安安</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head5.jpg"></div>
+                        <span>石头</span>
+                        <img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/haed8.jpg"></div>
+                        <span>果果</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head6.jpg"></div>
+                        <span>石头</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head5.jpg"></div>
+                        <span>等等</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/haed8.jpg"></div>
+                        <span>花花</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head7.jpg"></div>
+                        <span>可乐</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head1.jpg"></div>
+                        <span>石头</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head4.jpg"></div>
+                        <span>牵牛</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head5.jpg"></div>
+                        <span>厦门</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head4.jpg"></div>
+                        <span>石头</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head1.jpg"></div>
+                        <span>方便面</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head6.jpg"></div>
+                        <span>桃花</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/haed8.jpg"></div>
+                        <span>苹果</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portrait"><img src="image/n_c/head3.jpg"></div>
+                        <span>石头</span><img src="image/n_c/card2.png" class="xdot">
+                        <div class="menu-box  ">
+                            <div>组建讲义</div>
+                            <div class="menu-font-s">根据学员学情，一键生成讲义</div>
+                            <div class="li-submit"><a class="saveCancel active template">套用已有模版</a><a
+                                    class="saveCancel" href="addNotes.html">开始备课</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--遮罩-->
+<div class="mask">
+    <div class="mask-content">
+        <span class="glyphicon glyphicon-remove-circle del"></span>
+        <div class="mask-content-head">选择讲义模板</div>
+        <div class="mask-content-text"><span class="content-text-left">宋民国-2018.06.03</span> <div class="content-text-right"><a href="./details.html">详情</a> <a href="" class="active">选择</a></div></div>
+        <div class="mask-content-text"><span class="content-text-left">宋民国-2018.06.03</span> <div class="content-text-right"><a href="./details.html">详情</a> <a href="" class="active">选择</a></div></div>
+        <div class="mask-content-text"><span class="content-text-left">宋民国-2018.06.03</span> <div class="content-text-right"><a href="./details.html">详情</a> <a href="" class="active">选择</a></div></div>
+        <div class="mask-content-text"><span class="content-text-left">宋民国-2018.06.03</span> <div class="content-text-right"><a href="./details.html">详情</a> <a href="" class="active">选择</a></div></div>
+        <div class="mask-content-text"><span class="content-text-left">宋民国-2018.06.03</span> <div class="content-text-right"><a href="./details.html">详情</a> <a href="" class="active">选择</a></div></div>
+
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/newTemplate.js"></script>
+</body>
+</html>

@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>知识管理平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+
+    <link rel="stylesheet" href="css/handoutsDetails.css">
+
+    <script src="js/mask.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/correct2.js"></script>
+    <script src="js/jquery.wordexport.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+<!--头部样式-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="log" src="image/n_c/log.png"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active  addActive"><a href="newTemplate.html">课前备课 </a></li>
+                <li  class="addActive"><a href="management.html">学员管理</a></li>
+                <li class="addActive" ><a href="plan.html"  >学习计划维护</a></li>
+                <li class="addActive" ><a href="print.html" >打印管理</a></li>
+                <li class="addActive"><a href="correction.html" >作业批发</a></li>
+                <li class="addActive"><a href="javascript:;" >难题解答</a><span class="nav-bedge ">更新2张</span></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><img class="headicon" src="image/ssj_qrcode.png"/></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle headname" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">李老师 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="logout"><img src="image/out.png"/><span>退出</span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--主体内容-->
+<div class="container">
+    <div class="padding">
+        <div class="row-list-left">
+            <span class="glyphicon glyphicon-arrow-left"> </span>
+            <span><a href="ExamSprint.html">返回</a></span>
+
+        </div>
+        <div class="row-list-right">
+            <span>2018.11.6</span>
+            <span>考前冲刺组的讲义</span>
+
+        </div>
+    </div>
+    <div class="row head card">
+        <div class="card-head-title">
+            <div class="card-title">同步讲义</div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="card-head-item-title">
+                <div class="card-head-item-line bg-blue"></div>
+                <div class="card-head-item-btn">
+                    <img src="image/n_c/icon_20.png"/>
+                    <span>上节课进程</span>
+                </div>
+            </div>
+            <div class="card-head-item-content bg-blue">
+                <img class="card-head-item-icon" src="image/n_c/icon_18.png"/>
+                <div class="card-head-item-text text-blue">第一章 简易方程</div>
+                <div class="card-head-item-context">
+                    <div class="card-head-item-row">
+                        <div class="card-head-item-label">
+                            <div class="card-head-item-circle circle-blue"></div>
+                            <div class="card-head-item-text">知识点1：</div>
+                        </div>
+                        <div class="card-head-item-text">
+                            负数的初步认识文字文字文字文字文字文字文字文字文字文字文字文字
+                            <span class="btn-green">完全掌握</span>
+                            <span class="btn-yellow">比较生疏</span>
+                            <span class="btn-red">完全不懂</span>
+                            <span class="btn-blue">部分掌握</span>
+                        </div>
+                    </div>
+                    <div class="card-head-item-row">
+                        <div class="card-head-item-label">
+                            <div class="card-head-item-circle circle-blue"></div>
+                            <div class="card-head-item-text">知识点1：</div>
+                        </div>
+                        <div class="card-head-item-text">
+                            负数的初步认识文字文字文字文字文字文字文字文字文字文字文字文字
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="card-head-item-title">
+                <div class="card-head-item-line bg-yellow"></div>
+                <div class="card-head-item-btn">
+                    <img src="image/n_c/icon_19.png"/>
+                    <span>上节课进程</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="card-head-item-content bg-yellow">
+                        <img class="card-head-item-icon" src="image/n_c/icon_17.png"/>
+                        <div class="card-head-item-text text-yellow">第一章 简易方程</div>
+                        <div class="card-head-item-context">
+                            <div class="card-head-item-row">
+                                <div class="card-head-item-label">
+                                    <div class="card-head-item-circle circle-yellow"></div>
+                                    <div class="card-head-item-text">知识点1：</div>
+                                </div>
+                                <div class="card-head-item-text">
+                                    负数的初步认识文字文字文字文字文字文字文字文字文字文字文字文字
+                                </div>
+                            </div>
+                            <div class="card-head-item-row">
+                                <div class="card-head-item-label">
+                                    <div class="card-head-item-circle circle-yellow"></div>
+                                    <div class="card-head-item-text">知识点1：</div>
+                                </div>
+                                <div class="card-head-item-text">
+                                    负数的初步认识文字文字文字文字文字文字文字文字文字文字文字文字
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="card-head-item-content bg-yellow">
+                        <img class="card-head-item-icon" src="image/n_c/icon_17.png"/>
+                        <div class="card-head-item-text text-yellow">第一章 简易方程</div>
+                        <div class="card-head-item-context">
+                            <div class="card-head-item-row">
+                                <div class="card-head-item-label">
+                                    <div class="card-head-item-circle circle-yellow"></div>
+                                    <div class="card-head-item-text">知识点1：</div>
+                                </div>
+                                <div class="card-head-item-text">
+                                    负数的初步认识文字文字文字文字文字文字文字文字文字文字文字文字
+                                </div>
+                            </div>
+                            <div class="card-head-item-row">
+                                <div class="card-head-item-label">
+                                    <div class="card-head-item-circle circle-yellow"></div>
+                                    <div class="card-head-item-text">知识点1：</div>
+                                </div>
+                                <div class="card-head-item-text">
+                                    负数的初步认识文字文字文字文字文字文字文字文字文字文字文字文字
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="scroll-move">
+                <div class="mask"></div>  <!--第一步取消active  第二步才有active-->
+                <div class="card marB-1">
+                    <div class="sub-p clearfix">
+                        <div class="sub-label">教册</div>
+                        <div class="sub-items">
+                            <div class="sub-item active">上册</div>
+                            <div class="sub-item">下册</div>
+                        </div>
+                    </div>
+                    <div class="sub-p clearfix">
+                        <div class="sub-label">教材</div>
+                        <div class="sub-items">
+                            <div class="sub-item active">全部</div>
+                            <div class="sub-item">人教版</div>
+                            <div class="sub-item">北师大版</div>
+                            <div class="sub-item">xxx版</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tab">
+                        <div class="card-tab-item card-tab-item-active">同步</div>
+                        <div class="card-tab-item">专题</div>
+                    </div>
+                    <div class="input-group">
+							  <span class="input-group-addon" id="sizing-addon2">
+							  	<span class="glyphicon glyphicon-search"></span>
+							  </span>
+                        <input type="text" class="form-control" placeholder="快速搜索知识点" aria-describedby="sizing-addon2">
+                        <span class="input-group-addon search-btn"><span>搜索</span></span>
+                    </div>
+                    <ul class="list">
+                        <li class="li">
+                            <div class="li-title" data-toggle="collapse" href="#collapse" aria-expanded="false"
+                                 aria-controls="collapse">
+                                <div class="li-title-row">
+                                    <img src="image/selected.png"/>
+                                    <span class="span-text span-active">第一章  简易方程asasdfasdfasdfasdfassasdfasf</span>
+                                </div>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </div>
+                            <div class="collapse" id="collapse">
+                                <div class="well">
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数asdfasdfasdfasdfasdfasdfasdfasasdfasdfasdfasdfasasdfasdfasdfasdfasasdfasfsf</span>
+                                    </div>
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数</span>
+                                    </div>
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <div class="li-title" data-toggle="collapse" href="#collapse1" aria-expanded="false"
+                                 aria-controls="collapse1">
+                                <div class="li-title-row">
+                                    <img src="image/selected.png"/>
+                                    <span class="span-text span-active">第一章  简易方程asasdfasdfasdfasdfassasdfasf</span>
+                                </div>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </div>
+                            <div class="collapse" id="collapse1">
+                                <div class="well">
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数asdfasdfasdfasdfasdfasdfasdfasasdfasdfasdfasdfasasdfasdfasdfasdfasasdfasfsf</span>
+                                    </div>
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数</span>
+                                    </div>
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <div class="li-title" data-toggle="collapse" href="#collapse2" aria-expanded="false"
+                                 aria-controls="collapse2">
+                                <div class="li-title-row">
+                                    <img src="image/selected.png"/>
+                                    <span class="span-text span-active">第一章  简易方程asasdfasdfasdfasdfassasdfasf</span>
+                                </div>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </div>
+                            <div class="collapse" id="collapse2">
+                                <div class="well">
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>师傅的说法所发生的发送发</span>
+                                    </div>
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数</span>
+                                    </div>
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <div class="li-title" data-toggle="collapse" href="#collapse3" aria-expanded="false"
+                                 aria-controls="collapse3">
+                                <div class="li-title-row">
+                                    <img src="image/normal.png"/>
+                                    <span class="span-text">第一章  简易方程</span>
+                                </div>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </div>
+                            <div class="collapse" id="collapse3">
+                                <div class="well">
+                                    <div class="well-cell">
+                                        <img src="image/normal.png"/>
+                                        <span>用字母表示数</span>
+                                    </div>
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数</span>
+                                    </div>
+                                    <div class="well-cell">
+                                        <img src="image/selected.png"/>
+                                        <span>用字母表示数</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 scroll-right">
+            <!--第一步-->
+            <div class="card">
+                <!--步骤进度条-->
+                <div class="card-list row">
+                    <div class="card-li">
+                        <div class="card-li-label">课程主题</div>
+                        <div class="card-li-content">
+                            <div class="card-li-edit" contenteditable="true">
+                                <p>请输入本次教学目标</p>
+                            </div>
+                            <!--<div class="card-li-btn"><span>+继续编辑</span></div>-->
+                        </div>
+                        <!--<div class="card-li-content">
+                            <textarea class="card-li-textarea" name="theme" placeholder="请输入本次教学目标"></textarea>
+                        </div>-->
+                    </div>
+                    <div class="height active">
+                        <div class="card-li">
+                            <div class="card-li-label">教学内容</div>
+                            <div class="card-li-content">
+                                <div class="card-li-edit" contenteditable="false">
+                                    <p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+                                    <p>2、设计费老司机</p>
+                                </div>
+                                <div class="card-li-btn"><span>+继续编辑</span></div>
+                            </div>
+                        </div>
+                        <div class="card-li">
+                            <div class="card-li-label">教学目标</div>
+                            <div class="card-li-content">
+                                <div class="card-li-edit" contenteditable="false">
+                                    <p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+                                    <p>2、设计费老司机</p>
+                                </div>
+                                <div class="card-li-btn"><span>+继续编辑</span></div>
+                            </div>
+                        </div>
+                        <div class="card-li">
+                            <div class="card-li-label">选择考点</div>
+                            <div class="card-li-content well">
+                                <div class="card-li-content-label">
+                                    <span class="card-li-content-span">知识点1</span>
+                                    <span class="card-li-content-span-yellow">重点字词</span>
+                                </div>
+                                <div class="well-cell">
+                                    <img src="image/normal.png"/>
+                                    <span>用字母表示数</span>
+                                </div>
+                                <div class="well-cell">
+                                    <img src="image/selected.png"/>
+                                    <span>用字母表示数</span>
+                                </div>
+                                <div class="well-cell">
+                                    <img src="image/selected.png"/>
+                                    <span>用字母表示数</span>
+                                </div>
+                            </div>
+                            <div class="card-li-content well">
+                                <div class="card-li-content-label">
+                                    <span class="card-li-content-span">知识点1</span>
+                                    <span class="card-li-content-span-yellow">重点字词</span>
+                                </div>
+                                <div class="well-cell">
+                                    <img src="image/normal.png"/>
+                                    <span>用字母表示数</span>
+                                </div>
+                                <div class="well-cell">
+                                    <img src="image/selected.png"/>
+                                    <span>用字母表示数</span>
+                                </div>
+                                <div class="well-cell">
+                                    <img src="image/selected.png"/>
+                                    <span>用字母表示数</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-row">
+                        <span class="footer-text">展开这部分</span>
+                        <img class="" src="image/n_c/icon_15.png"/>
+                    </div>
+                </div>
+            </div>
+            <!--第二步-->
+            <div class="card marB-1">
+                <div class="card-items row">
+                    <div class="sub-two">
+                        <div class="sub-two-label">学习能力匹配</div>
+                        <div class="sub-two-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</div>
+                        <div class="sub-two-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</div>
+                    </div>
+                    <div class="card-items-wrapper">
+                        <div class="sub clearfix">
+                            <div class="sub-label">科目</div>
+                            <div class="sub-items ">
+                                <div class="sub-item active">语文</div>
+                                <div class="sub-item">数学</div>
+                                <div class="sub-item">英语</div>
+                            </div>
+                        </div>
+                        <div class="sub clearfix">
+                            <div class="sub-label">教材</div>
+                            <div class="sub-items">
+                                <div class="sub-item active">全部</div>
+                                <div class="sub-item">人教版</div>
+                                <div class="sub-item">北师大版</div>
+                                <div class="sub-item">xxx版</div>
+                                <div class="sub-item">北师大版</div>
+                                <div class="sub-item">xxx版</div>
+                                <div class="sub-item">北师大版</div>
+                                <div class="sub-item">xxx版</div>
+                                <div class="sub-item">北师大版</div>
+                                <div class="sub-item">xxx版</div>
+                                <div class="sub-item">北师大版</div>
+                                <div class="sub-item">xxx版</div>
+                            </div>
+                        </div>
+                        <div class="sub clearfix">
+                            <div class="sub-label">类型</div>
+                            <div class="sub-items">
+                                <div class="sub-item active">全部</div>
+                                <div class="sub-item">人教版</div>
+                                <div class="sub-item">北师大版</div>
+                                <div class="sub-item">xxx版</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-max"><span class="sub-max-text">展开</span><span
+                            class="glyphicon glyphicon-chevron-down"></span></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-list row">
+                    <div class="card-li">
+                        <div class="card-li-item">
+                            <div class="card-li-content-header clearfix">
+                                <div class="pull-left">
+                                    <div class="card-li-label">课前检测</div>
+                                </div>
+                                <div class="pull-right clearfix">
+											<span class="card-li-content-header-item">
+												<span>展示方式：</span>
+											</span>
+                                    <span class="card-li-content-header-item active">
+												<img src="image/selected.png"/>
+												<span>上节课错题回顾</span>
+												<div class="card-li-content-header-item-imgs">
+													<img class="card-li-content-header-item-img-1"
+                                                         src="image/n_c/icon_12.png"/>
+													<img class="card-li-content-header-item-icon"
+                                                         src="image/n_c/icon_29.png"/>
+												</div>
+											</span>
+                                    <span class="card-li-content-header-item">
+												<img src="image/selected.png"/>
+												<span>上节课作业回顾</span>
+												<div class="card-li-content-header-item-imgs">
+													<img class="card-li-content-header-item-img-2"
+                                                         src="image/n_c/icon_13.png"/>
+													<img class="card-li-content-header-item-icon"
+                                                         src="image/n_c/icon_29.png"/>
+												</div>
+											</span>
+                                    <span class="card-li-content-header-item">
+												<img src="image/normal.png"/>
+												<span>自定义加题</span>
+												<div class="card-li-content-header-item-imgs">
+													<img class="card-li-content-header-item-img-3"
+                                                         src="image/n_c/icon_30.png"/>
+													<img class="card-li-content-header-item-icon"
+                                                         src="image/n_c/icon_29.png"/>
+												</div>
+											</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <div class="card-li-edit">
+                                <p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+                                <p>2、设计费老司机</p>
+                            </div>
+                            <div class="card-li-edit">
+                                <p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+                                <p>2、设计费老司机</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-list row">
+                    <div class="card-li">
+                        <div class="card-li-item">
+                            <div class="card-li-content-header clearfix">
+                                <div class="pull-left">
+                                    <div class="card-li-label">师徒同步走</div>
+                                </div>
+                                <div class="pull-right clearfix">
+											<span class="card-li-content-header-item">
+												<span>是否显示：</span>
+											</span>
+                                    <span class="card-li-content-header-item active">
+												<img src="image/selected.png"/>
+												<span>显示</span>
+											</span>
+                                    <span class="card-li-content-header-item active">
+												<img src="image/n_c/icon_14.png"/>
+												<span>不显示</span>
+											</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content-full">
+                            <div class="card-li-content-full-row card-li-content-full-4">
+                                <div class="card-li-content-full-4">
+                                    <div class="card-li-content-full-text-gray">选择输入标题</div>
+                                    <div class="card-li-content-full-text-red">(不选则不显示)</div>
+                                </div>
+                                <div class="card-li-content-full-6">
+                                    <div class="card-li-content-full-row mb-1">
+                                        <img src="image/n_c/icon_14.png"/>
+                                        <span>第</span>
+                                        <input type="text" class="card-li-content-full-input" value=""/>
+                                        <span>课</span>
+                                    </div>
+                                    <div class="card-li-content-full-row active">
+                                        <img src="image/n_c/icon_22.png"/>
+                                        <span>第</span>
+                                        <input type="text" class="card-li-content-full-input" value=""/>
+                                        <span>课</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-li-content-full-6">
+                                <div class="card-li-content-full-row mb-1">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>第</span>
+                                    <input type="text" class="card-li-content-full-input" value=""/>
+                                    <span>课</span>
+                                    <span class="line"></span>
+                                    <span>第</span>
+                                    <input type="text" class="card-li-content-full-input" value=""/>
+                                    <span>课</span>
+                                </div>
+                                <div class="card-li-content-full-row active">
+                                    <img src="image/n_c/icon_22.png"/>
+                                    <span>第</span>
+                                    <input type="text" class="card-li-content-full-input" value=""/>
+                                    <span>课</span>
+                                    <span class="line"></span>
+                                    <span>第</span>
+                                    <input type="text" class="card-li-content-full-input" value=""/>
+                                    <span>课</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--技能1-->
+                        <div class="card-li-content">
+                            <div class="card-li-content-label">
+                                <span class="card-li-content-span">技能1</span>
+                                <span class="card-li-content-span-yellow">形近字</span>
+                            </div>
+                            <div class="card-li-content-label-two">
+                                <img src="image/n_c/icon_23.png"/>
+                                <span>小脑袋必记</span>
+                            </div>
+                            <div class="card-li-edit">
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <div class="card-li-content-label">
+                                <span class="card-li-content-span">技能2</span>
+                                <span class="card-li-content-span-yellow">日积月累</span>
+                            </div>
+                            <div class="card-li-content-label-two">
+                                <img src="image/n_c/icon_23.png"/>
+                                <span>小脑袋必记</span>
+                            </div>
+                            <div class="card-li-edit">
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                            </div>
+                        </div>
+                        <div class="card-li-label-img">
+                            <img src="image/n_c/icon_6.png"/>
+                            <span>技能释放营地</span>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">1</span>
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">2</span>
+                                <!--<span>知识点2</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/normal.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-list row">
+                    <div class="card-li">
+                        <div class="card-li-item">
+                            <div class="card-li-content-header clearfix">
+                                <div class="pull-left">
+                                    <div class="card-li-label">私塾秘籍营</div>
+                                </div>
+                                <div class="pull-right clearfix">
+											<span class="card-li-content-header-item">
+												<span>是否显示：</span>
+											</span>
+                                    <span class="card-li-content-header-item active">
+												<img src="image/selected.png"/>
+												<span>显示</span>
+											</span>
+                                    <span class="card-li-content-header-item active">
+												<img src="image/selected.png"/>
+												<span>不显示</span>
+											</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content-label-2">
+                            <span class="card-li-content-span-2">招式1</span>
+                            <span class="card-li-content-span-yellow-2">把字句与被字句互换</span>
+                        </div>
+                        <div class="card-li-row">
+                            <div class="card-li-row-btn">
+                                <img src="image/n_c/icon_31.png"/>
+                                <span>考点 1</span>
+                            </div>
+                            <div class="card-li-row-flex">我是一个考点</div>
+                        </div>
+                        <!--技能1-->
+                        <div class="card-li-content">
+                            <div class="card-li-content-label-two">
+                                <img src="image/n_c/icon_23.png"/>
+                                <span>招式展示台</span>
+                            </div>
+                            <div class="card-li-edit">
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <div class="card-li-content-label-three">
+                                <img src="image/n_c/icon_16.png"/>
+                                <span>师傅示范</span>
+                            </div>
+                            <div class="card-li-edit">
+                                <p class="fontweight">他紧紧地握住了老人的手。（变为把字句、被字句）</p>
+                                <div class="card-li-edit-row">
+                                    <div class="fontweight">［分析］</div>
+                                    <div class="card-li-edit-flex">陈述句变“把”字句时，将宾语调到主语后加“把”字，谓语放在句子末尾。
+                                        变“被”字句时，宾语调到主语前加“被”字。
+                                    </div>
+                                </div>
+                                <div class="card-li-edit-row">
+                                    <div class="fontweight">［答案］</div>
+                                    <div class="card-li-edit-flex">陈述句变“把”字句时，将宾语调到主语后加“把”字，谓语放在句子末尾。
+                                        变“被”字句时，宾语调到主语前加“被”字。
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>-->
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-label-img">
+                            <img src="image/n_c/icon_6.png"/>
+                            <span>招式训练场</span>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">1</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">2</span>
+                                <!--<span>知识点2</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/normal.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-row">
+                        <span class="card-li-content-btn-green"><img class="img" src="image/n_c/icon_1.png"/><span
+                                class="glyphicon">增加一题</span></span>
+                    </div>
+                    <div class="card-li">
+                        <div class="card-li-content">
+                            <div class="card-li-content-label">
+                                <span class="card-li-content-span">招式1</span>
+                                <span class="card-li-content-span-yellow">概括文章主要内容</span>
+                            </div>
+                            <div class="card-li-content-label-two">
+                                <img src="image/n_c/icon_23.png"/>
+                                <span>招式展示台</span>
+                            </div>
+                            <div class="card-li-edit">
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                                <p>落红不是无情物，化作春泥更护花。 《己亥杂诗》龚自珍 </p>
+                                <p>shuài lǐng ( ) mì shí ( ) sǒng lì ( )</p>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <div class="card-li-content-label-three">
+                                <img src="image/n_c/icon_16.png"/>
+                                <span>师傅示范</span>
+                            </div>
+                            <div class="card-li-edit">
+                                <p class="fontweight">阅读文章《冬》，回答问题。</p>
+                                <p class="text-indent">
+                                    当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。</p>
+                                <p class="text-indent">
+                                    当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。</p>
+                                <p class="text-indent">
+                                    当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。</p>
+
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">1</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">2</span>
+                                <!--<span>知识点2</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/normal.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-label-img">
+                            <img src="image/n_c/icon_6.png"/>
+                            <span>招式训练场</span>
+                        </div>
+                        <div class="card-li-edit">
+                            <p class="fontweight">阅读文章《冬》，回答问题。</p>
+                            <p class="text-indent">
+                                当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。</p>
+                            <p class="text-indent">
+                                当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。</p>
+                            <p class="text-indent">
+                                当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。</p>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">1</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">2</span>
+                                <!--<span>知识点2</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/normal.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-list row">
+                    <div class="card-li">
+                        <div class="card-li-item">
+                            <div class="card-li-content-header clearfix">
+                                <div class="pull-left">
+                                    <div class="card-li-label">私塾大比武</div>
+                                </div>
+                                <div class="pull-right clearfix">
+											<span class="card-li-content-header-item">
+												<span>是否显示：</span>
+											</span>
+                                    <span class="card-li-content-header-item active">
+												<img src="image/selected.png"/>
+												<span>显示</span>
+											</span>
+                                    <span class="card-li-content-header-item active">
+												<img src="image/selected.png"/>
+												<span>不显示</span>
+											</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">1</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">2</span>
+                                <!--<span>知识点2</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/normal.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">3</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">4</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">5</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">6</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">7</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-label-2">
+                            <span>阅读理解</span>
+                        </div>
+                        <div class="card-li-edit">
+                            <p class="fontweight">阅读文章《冬》，回答问题。</p>
+                            <p class="text-indent">
+                                当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。</p>
+                            <p class="text-indent">
+                                当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。</p>
+                            <p class="text-indent">
+                                当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。</p>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">8</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-li-content">
+                            <p class="card-li-content-label">
+                                <span class="card-li-content-span">9</span>
+                                <!--<span>知识点1</span>-->
+                                <span class="card-li-content-right">难度</span>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_selected.png"/>
+                                <img src="image/Star_normal.png"/>
+                                <img src="image/Star_normal.png"/>
+                            </p>
+                            <div class="card-li-edit">
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-edit-detail">
+                                <p class="fontweight">思路解析</p>
+                                <p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+                            </div>
+                            <div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span
+                                    class="glyphicon glyphicon-chevron-down"></span></div>
+                            <div class="card-li-content-footer clearfix">
+                                <div class="pull-left">
+                                    <img src="image/n_c/icon_14.png"/>
+                                    <span>显示答案及详情</span>
+                                </div>
+                                <div class="pull-right">
+                                    <span class="card-li-content-btn-red"><span
+                                            class="glyphicon glyphicon-arrow-up"></span>加难</span>
+                                    <span class="card-li-content-btn-green"><span
+                                            class="glyphicon glyphicon-arrow-down"></span>减易</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-refresh"></span>换一题</span>
+                                    <span class="card-li-content-btn-gray"><span
+                                            class="glyphicon glyphicon-trash"></span>删除</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-row">
+                        <span class="card-li-content-btn-green"><img class="img" src="image/n_c/icon_1.png"/><span
+                                class="glyphicon">增加一题</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-list row">
+                    <div class="card-li">
+                        <div class="card-li-item">
+                            <div class="card-li-content-header clearfix">
+                                <div class="pull-left">
+                                    <div class="card-li-label">私塾照相馆</div>
+                                </div>
+                                <div class="pull-right clearfix">
+											<span class="card-li-content-header-item">
+												<span>是否显示：</span>
+											</span>
+                                    <span class="card-li-content-header-item active">
+												<img src="image/selected.png"/>
+												<span>思维导图</span>
+											</span>
+                                    <span class="card-li-content-header-item">
+												<img src="image/n_c/icon_14.png"/>
+												<span>问题式梳理</span>
+											</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--技能1-->
+                        <div class="card-li-content">
+                            <p class="fontweight">请给树干添加叶子，并在叶子内写上本节课所学到的知识点。</p>
+                            <img class="card-li-content-img10" src="image/n_c/icon_10.png"/>
+                        </div>
+                        <div class="card-li-content">
+                            <img class="card-li-content-img11" src="image/n_c/icon_8.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-list row">
+                    <div class="card-li">
+                        <div class="card-li-item">
+                            <div class="card-li-content-header clearfix">
+                                <div class="pull-left">
+                                    <div class="card-li-label">课后小练武</div>
+                                </div>
+                                <div class="pull-right clearfix">
+											<span class="card-li-content-header-item">
+												<span>是否显示：</span>
+											</span>
+                                    <span class="card-li-content-header-item">
+												<img src="image/n_c/icon_14.png"/>
+												<span>显示</span>
+											</span>
+                                    <span class="card-li-content-header-item">
+												<img src="image/n_c/icon_22.png"/>
+												<span>不显示</span>
+											</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--技能1-->
+                    </div>
+                </div>
+            </div>
+            <div class="btn-next">
+                <div class="text text-active-left">删除讲义</div>
+                <div class="text text-active  text-active-right">保存</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-container">
+        <div class="fixed-wrapper">
+            <div class="fixed-title">讲义内容</div>
+            <div class="fixed-items">
+                <div class="fixed-item">
+                    <span class="fixed-item-text-gray">温故知新</span>
+                    <span class="fixed-item-circle">+</span>
+                    <span class="fixed-item-text">8</span>
+                    <span class="fixed-item-circle">-</span>
+                </div>
+                <div class="fixed-item">
+                    <span class="fixed-item-text-gray">知识精讲</span>
+                    <span class="fixed-item-circle">+</span>
+                    <span class="fixed-item-text">8</span>
+                    <span class="fixed-item-circle">-</span>
+                </div>
+                <div class="fixed-item">
+                    <span class="fixed-item-text-gray">小试牛刀</span>
+                    <span class="fixed-item-circle">+</span>
+                    <span class="fixed-item-text">8</span>
+                    <span class="fixed-item-circle">-</span>
+                </div>
+                <div class="fixed-item">
+                    <span class="fixed-item-text-gray">课后巩固</span>
+                    <span class="fixed-item-circle">+</span>
+                    <span class="fixed-item-text">8</span>
+                    <span class="fixed-item-circle">-</span>
+                </div>
+            </div>
+            <div class="fixed-text">总计：12题</div>
+            <div class="fixed-content">
+                <div class="fixed-text">平均难度</div>
+                <div class="fixed-image">
+                    <img src="image/Star_selected.png"/>
+                    <img src="image/Star_selected.png"/>
+                    <img src="image/Star_selected.png"/>
+                </div>
+                <div class="fixed-text">较难 50%</div>
+                <div class="fixed-text">简易 30%</div>
+            </div>
+            <div class="fixed-buttons">
+                <div class="fixed-btn-active">提交讲义</div>
+                <div class="fixed-btn">继续选题</div>
+            </div>
+            <div class="fixed-left">
+                <div class="fixed-left-btn">
+                    <div class="fixed-left-text">讲</div>
+                    <div class="fixed-left-text">义</div>
+                    <div class="fixed-left-text">内</div>
+                    <div class="fixed-left-text">容</div>
+                    <div class="fixed-left-text"><<</div>
+                </div>
+                <div class="fixed-left-btn-2" id="toTop">
+                    <img class="fixed-left-icon" src="image/n_c/icon_25.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tip-container">
+        <div class="tip-fistCard">
+            <img class="tip-xicon-2" src="image/n_c/Tips@2x.png" alt="">
+            <img class="tip-xicon-1" src="image/n_c/Group%2039@2x.png"/>
+            <span class="fistcard-left"><<</span>
+
+        </div>
+        <div class="tip-wrapper xcard">
+            <img class="tip-icon-1" src="image/n_c/icon_1.png"/>
+            <img class="tip-icon-2" src="image/n_c/icon_7.png"/>
+            <img class="tip-icon-3" src="image/n_c/icon_9.png"/>
+            <img class="tip-icon-4" src="image/n_c/icon_11.png"/>
+            <img class="tip-icon-5" src="image/n_c/icon_24.png"/>
+            <div class="tip-content">您的学生上节课掌握程度较差，本节课建议先复习旧知，再学习新知哦！</div>
+        </div>
+    </div>
+    <div class="loading-container">
+        <div class="loading-wrapper">
+            <div>
+                <div class="mop-load-div">
+                    <div class="mop-css-10 fading-circle">
+                        <div class="sk-circle1 sk-circle"></div>
+                        <div class="sk-circle2 sk-circle"></div>
+                        <div class="sk-circle3 sk-circle"></div>
+                        <div class="sk-circle4 sk-circle"></div>
+                        <div class="sk-circle5 sk-circle"></div>
+                        <div class="sk-circle6 sk-circle"></div>
+                        <div class="sk-circle7 sk-circle"></div>
+                        <div class="sk-circle8 sk-circle"></div>
+                        <div class="sk-circle9 sk-circle"></div>
+                        <div class="sk-circle10 sk-circle"></div>
+                        <div class="sk-circle11 sk-circle"></div>
+                        <div class="sk-circle12 sk-circle"></div>
+                    </div>
+                </div>
+                <div class="loading-text">请稍等，题目正在生成......</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--遮罩部分-->
+<div class="maskA">
+    <div class="mask-content">
+        <span class="glyphicon glyphicon-remove"></span>
+        <div class="mask-content-head">
+            <span class="head-name">是否要删除此讲义</span>
+        </div>
+            <div class="mask-content-btn"><a  class="active">取消</a><a >确定</a> </div>
+    </div>
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/handoutsDetails.js"></script>
+</body>
+</html>

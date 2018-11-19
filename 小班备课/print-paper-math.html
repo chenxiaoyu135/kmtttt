@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>知识管理平台</title>
+
+    <!-- Bootstrap -->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/header.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/print-paper-math.css"/>
+		<script src="js/mask.js" type="text/javascript" charset="utf-8"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<!--<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#" id="print"><img class="log" src="image/log.png"/></a>
+		    </div>
+		
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="home.html">课前备课<span class="sr-only">(current)</span></a></li>
+		        <li><a href="management.html">学员管理</a></li>
+		        <li><a href="plan.html">学习计划维护</a></li>
+		        <li><a href="print.html">打印管理</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#"><img class="headicon" src="image/ssj_qrcode.png"/></a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle headname" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">李老师 <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		        <li><a href="#" class="logout"><img src="image/out.png"/><span>退出</span></a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>-->
+  	<div class="container">
+			<div class="row padding">
+				<div class="col-lg-1 col-md-1"></div>
+				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+					<!--步骤一-->
+					<div class="card li">
+						<div class="li-top clearfix">
+							<img class="li-top-img" src="image/math_header.png"/>
+						</div>
+						<div class="li-wrapper">
+							<div class="li-title">私塾家学科教师辅导讲义</div>
+							<div class="li-content">
+								<div class="li-items li-border clearfix">
+									<div class="li-item">学生姓名_____________</div>
+									<div class="li-item">年级_____________</div>
+									<div class="li-item">授课教师_____________</div>
+									<div class="li-item">授课时间_____________</div>
+									<div class="li-item">科目_____________</div>
+									<div class="li-item">授课课时_____________</div>
+								</div>
+								<div class="li-content-text">
+									<img src="image/math_1.png"/>
+									<p>课程标题：老师输入的课程标题，限制文字数量20个字。</p>
+								</div>
+								<div class="li-content-text">
+									<img src="image/math_2.png"/>
+									<ol>
+										<li><div contenteditable="true">认识用字母表示数的作用文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div></li>
+										<li><div>认识用字母表示数的作用文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div></li>
+										<li><div>认识用字母表示数的作用文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div></li>
+									</ol>
+								</div>
+							</div>
+							
+							<!--复习回顾-->
+							<div class="li-content">
+								<div class="li-content-title">
+									<img src="image/math_3.png"/>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img src="image/math_10.png"/>
+										<span>错题回顾</span>
+									</div>
+									<ol>
+										<li>
+											<div>计算题：把下面的分数化成最简分数。</div>
+											<div>（1）16/72 （2）24/32 （3）18/30 （4）24/120</div>
+										</li>
+										<li>
+											<div>填空题：把一个分数用2约分一次，用3约分一次，用5约分一次，得到的最后结果是2/3，你知道原 来这个数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img src="image/math_12.png"/>
+										<span>知识点讲解</span>
+									</div>
+									<ol>
+										<li>
+											<div>计算题：把下面的分数化成最简分数。</div>
+											<div>（1）16/72 （2）24/32 （3）18/30 （4）24/120</div>
+										</li>
+										<li>
+											<div>填空题：把一个分数用2约分一次，用3约分一次，用5约分一次，得到的最后结果是2/3，你知道原 来这个数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img src="image/math_11.png"/>
+										<span>作业回顾</span>
+									</div>
+									<ol>
+										<li>
+											<div>计算题：把下面的分数化成最简分数。</div>
+											<div>（1）16/72 （2）24/32 （3）18/30 （4）24/120</div>
+										</li>
+										<li>
+											<div>填空题：把一个分数用2约分一次，用3约分一次，用5约分一次，得到的最后结果是2/3，你知道原 来这个数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img src="image/math_13.png"/>
+										<span>自定义加题</span>
+									</div>
+									<ol>
+										<li>
+											<div>计算题：把下面的分数化成最简分数。</div>
+											<div>（1）16/72 （2）24/32 （3）18/30 （4）24/120</div>
+										</li>
+										<li>
+											<div>填空题：把一个分数用2约分一次，用3约分一次，用5约分一次，得到的最后结果是2/3，你知道原 来这个数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+							
+							<!--知识精讲-->
+							<div class="li-content">
+								<div class="li-content-title">
+									<img src="image/math_4.png"/>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-1" src="image/math_21.png"/>
+										<span class="li-pencil-text">最大公因数</span>
+									</div>
+									<p>要点梳理：</p>
+									<ol>
+										<li>
+											<div>几个数公有的因数，就是这几个数的公因数；</div>
+										</li>
+										<li>
+											<div>找最大公因数的方法：列举法、分解质因数法、短除法；</div>
+										</li>
+										<li>
+											<div>互为质数的两个数，最大公因数是1。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-2" src="image/math_61.png"/>
+										<span class="li-pencil-text">求两个数的最大公因数的方法</span>
+									</div>
+									<p>例题：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+									<p>答案解析：</p>
+									<p>题目分析：文字文字文字文字文字文字文字文字文字文字文字文字文文字文字文字文字文字文字文字 文字文字文字文字文字文 </p>
+									<p>思路引导：文字文字文字文字文字文字文字文字文字文字文字文字文 </p>
+									<p>总结建议： 文字文字文字文字文字文字文字文字文字文字文字文字文</p>
+									<p>练习：</p>
+									<ol>
+										<li>
+											<div>一个数的最小倍数是24，这个数是（ ），它共有（ ）个因数。</div>
+										</li>
+										<li>
+											<div>求出相邻两个数的最大公因数。 15（ ）20（ ）24（ ）12（ ）60（ ）48</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-2" src="image/math_62.png"/>
+										<span class="li-pencil-text">求两个数的最大公因数的方法</span>
+									</div>
+									<p>例题：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+									<p>答案解析：</p>
+									<p>题目分析：文字文字文字文字文字文字文字文字文字文字文字文字文文字文字文字文字文字文字文字 文字文字文字文字文字文 </p>
+									<p>思路引导：文字文字文字文字文字文字文字文字文字文字文字文字文 </p>
+									<p>总结建议： 文字文字文字文字文字文字文字文字文字文字文字文字文</p>
+									<p>练习：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-3" src="image/math_42.png"/>
+										<span class="li-pencil-text">约分</span>
+									</div>
+									<p>要点梳理：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-2" src="image/math_61.png"/>
+										<span class="li-pencil-text">约分的概念和方法</span>
+									</div>
+									<p>例题：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+									<p>练习：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-1" src="image/math_23.png"/>
+										<span class="li-pencil-text">最小公倍数</span>
+									</div>
+									<p>要点梳理：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-2" src="image/math_61.png"/>
+										<span class="li-pencil-text">求两个数的最小公倍数的方法</span>
+									</div>
+									<p>例题：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+									<p>练习：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-2" src="image/math_62.png"/>
+										<span class="li-pencil-text">求两个数的最小公倍数的特殊情况</span>
+									</div>
+									<p>例题：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+									<p>练习：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-3" src="image/math_24.png"/>
+										<span class="li-pencil-text">通分</span>
+									</div>
+									<p>要点梳理：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+								<div class="li-context">
+									<div class="li-context-title">
+										<img class="li-img-2" src="image/math_61.png"/>
+										<span class="li-pencil-text">通分的概念和方法</span>
+									</div>
+									<p>例题：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+									<p>练习：</p>
+									<ol>
+										<li>
+											<div>求下列每组数的公因数及最大公因数。 （1）8和20 （2）30和45</div>
+										</li>
+										<li>
+											<div>如果a=2×2×3×5，b=2×3×7，那么a和b的最大公因数是（ ）。</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+							
+							<!--小试牛刀-->
+							<div class="li-content">
+								<div class="li-content-title">
+									<img src="image/math_5.png"/>
+								</div>
+								<div class="li-context">
+									<ol>
+										<li>
+											<div>一个最简真分数，分子与分母的和是15，这样的分数一共有（ ）。 </div>
+											<div>A.1个 B.2个 C.3个 D.4个</div>
+										</li>
+										<li>
+											<div>分母是5的所有最简真分数的和是（ ）。 </div>
+											<div>A.2 B.3 C.1 D.</div>
+										</li>
+										<li>
+											<div>两个分数通分后的新分母是原来两个分母的乘积，原来的两个分母一定（ ）。 </div>
+											<div>A. 都是质数 B.是相邻的自然数 C.是互质数</div>
+										</li>
+										<li>
+											<div>通分时选用的公分母一般是原来几个分母的（ ）。</div>
+										</li>
+										<li>
+											<div>判断题。 </div>
+											<div>（1）约分时，每个分数越约越小；通分时，每个分数的值越来越大。</div>
+											<div>（2）两个数的最小公倍数一定比这两个数都大。（ ）</div>
+										</li>
+										<li>
+											<div>比较大小。</div>
+										</li>
+										<li>
+											<div>是最简真分数，a可取的整数共有多少个？ </div>
+										</li>
+										<li>
+											<div>一个分数的分子加1，这个分数是1。如果把这个分数的分母加1，这个分数就是 ，原来的这个分 数是多少？ </div>
+										</li>
+									</ol>
+								</div>
+							</div>
+							
+							<!--学有所获-->
+							<div class="li-content">
+								<div class="li-content-title">
+									<img src="image/math_6.png"/>
+								</div>
+								<div class="li-context">
+									<ol>
+										<li><div>陈述句改成反问句：我们每一个人需要的是这种精神。</div></li>
+										<li><div>陈述句改成反问句：我们每一个人需要的是这种精神。</div></li>
+										<li><div>陈述句改成反问句：我们每一个人需要的是这种精神。</div></li>
+									</ol>
+								</div>
+							</div>
+							
+							<!--课后巩固-->
+							<div class="li-content">
+								<div class="li-content-title">
+									<img src="image/math_7.png"/>
+								</div>
+								<div class="li-context">
+									<ol>
+										<li>
+											<div>一个最简真分数，分子与分母的和是15，这样的分数一共有（ ）。 </div>
+											<div>A.1个 B.2个 C.3个 D.4个</div>
+										</li>
+										<li>
+											<div>分母是5的所有最简真分数的和是（ ）。 </div>
+											<div>A.2 B.3 C.1 D.</div>
+										</li>
+										<li>
+											<div>两个分数通分后的新分母是原来两个分母的乘积，原来的两个分母一定（ ）。 </div>
+											<div>A. 都是质数 B.是相邻的自然数 C.是互质数</div>
+										</li>
+										<li>
+											<div>通分时选用的公分母一般是原来几个分母的（ ）。</div>
+										</li>
+										<li>
+											<div>判断题。 </div>
+											<div>（1）约分时，每个分数越约越小；通分时，每个分数的值越来越大。</div>
+											<div>（2）两个数的最小公倍数一定比这两个数都大。（ ）</div>
+										</li>
+										<li>
+											<div>比较大小。</div>
+										</li>
+										<li>
+											<div>是最简真分数，a可取的整数共有多少个？ </div>
+										</li>
+										<li>
+											<div>一个分数的分子加1，这个分数是1。如果把这个分数的分母加1，这个分数就是 ，原来的这个分 数是多少？ </div>
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+						<img class="li-bottom-img" src="image/math_footer.png"/>
+						<div class="li-bottom clearfix">
+							<div class="li-bottom-title">
+								课程标题：老师输入的课程标题，限制文字数量20个字。
+							</div>
+							<span class="li-bottom-text">1/5</span>
+						</div>
+					</div>
+				</div>	
+			</div>
+  	</div>
+  	<div class="fixed-container" >
+  		<!--<a href="javascript:void(0)" id="export_word" class="btn btn-primary">导出</a>-->  
+  		<div class="fixed-wrapper">
+  			<div class="fixed-buttons">
+  				<div class="fixed-btn-active">打印文档</div>
+  				<div class="fixed-btn-active">导出文档</div>
+  				<div class="fixed-btn">修改编辑</div>
+  			</div>
+  		</div>
+  		<div class="fixed-right">
+  			<div class="fixed-right-text">>></div>
+  		</div>
+  	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+//  		$("html").wordExport()
+//  		$('#export_word').click(function() {
+//  			window.print();
+//  				$("#export_word").hide();  
+//				    $("html").wordExport();  
+//				    $("#export_word").show();
+//  		});
+    		$('.fixed-right-text').click(function(){
+    			if (!$(this).parent().hasClass('active')) {
+    				$(this).text('<<')
+    			} else {
+	    			$(this).text('>>')
+    			}
+    			$(this).parent().toggleClass('active')
+    			$(this).parents('.fixed-container').find('.fixed-wrapper').toggleClass('active')
+    		})
+    	})
+    </script>
+  </body>
+</html>

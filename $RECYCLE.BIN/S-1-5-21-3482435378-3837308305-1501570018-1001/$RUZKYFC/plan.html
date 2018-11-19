@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>知识管理平台</title>
+
+    <!-- Bootstrap -->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/plan.css"/>
+		<script src="js/mask.js" type="text/javascript" charset="utf-8"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+
+		  <div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#"><img class="log" src="image/n_c/log.png"/></a>
+		  </div>
+
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				  <li class="addActive"><a href="newTemplate.html">课前备课 </a></li>
+				  <li class="addActive"><a href="management.html">学员管理</a></li>
+				  <li class="addActive active  "><a href="plan.html">学习计划维护</a></li>
+				  <li class="addActive"><a href="print.html">打印管理</a></li>
+				  <li class="addActive"><a href="#">作业批改</a></li>
+				  <li class="addActive"><a href="javascript:;">难题解答</a><span class="nav-bedge ">更新2张</span></li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				  <li><a href="#"><img class="headicon" src="image/ssj_qrcode.png"/></a></li>
+				  <li class="dropdown">
+					  <a href="#" class="dropdown-toggle headname" data-toggle="dropdown" role="button"
+						 aria-haspopup="true" aria-expanded="false">李老师 <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						  <li><a href="#">Action</a></li>
+						  <li><a href="#">Another action</a></li>
+						  <li><a href="#">Something else here</a></li>
+						  <li role="separator" class="divider"></li>
+						  <li><a href="#">Separated link</a></li>
+					  </ul>
+				  </li>
+				  <li><a href="#" class="logout"><img src="image/out.png"/><span>退出</span></a></li>
+			  </ul>
+		  </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+  </nav>
+  	<div class="container">
+			<div class="row padding">
+				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+					<div class="card">
+						<div class="card-btn">
+							<div class="card-btn-text" id="newmodel">创建计划模版</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+					<div class="row card">
+						<div class="nodata">
+							<img src="image/nodata_3.png"/>
+							<p>您还制定任何学习计划模版</p>
+						</div>
+						<div class="border clearfix">
+							<div class="list">
+								<div class="list-title li-one">模版名称</div>
+								<div class="list-title li-two">学习内容</div>
+								<div class="list-title li-one">操作</div>
+							</div>
+							<div class="list">
+								<div class="list-li li-one">
+									<div class="li-label">
+										<p>各科中重点章节复习及练习</p>
+										<span class="btn-green">3天制</span>
+									</div>
+								</div>
+								<div class="list-li li-two">
+									<div class="li-wrapper">
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；阿萨德发发是的爱妃阿斯顿发爱上的按时爱妃按时发送是发送</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+									</div>
+									<div class="li-more">
+										<span class="li-more-text">展开全部</span>
+										<span class="glyphicon glyphicon-chevron-down"></span>
+									</div>
+								</div>
+								<div class="list-li li-one">
+									<div class="li-btn-green"><span>选定</span></div>
+									<div class="li-text-green"><span>修改</span></div>
+									<div class="li-text-red"><span>删除</span></div>
+								</div>
+							</div>
+							
+							<div class="list">
+								<div class="list-li li-one">
+									<div class="li-label">
+										<p>各科中重点章节复习及练习</p>
+										<span class="btn-green">3天制</span>
+									</div>
+								</div>
+								<div class="list-li li-two">
+									<div class="li-wrapper">
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+										</div>
+									</div>
+									<div class="li-more">
+										<span class="li-more-text">展开全部</span>
+										<span class="glyphicon glyphicon-chevron-down"></span>
+									</div>
+								</div>
+								<div class="list-li li-one">
+									<div class="li-btn-green"><span>选定</span></div>
+									<div class="li-text-green"><span>修改</span></div>
+									<div class="li-text-red"><span>删除</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix">
+						  <ul class="pagination pull-right">
+						    <li>
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true">上一页</span>
+						      </a>
+						    </li>
+						    <li><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li><a href="#">...</a></li>
+						    <li><a href="#">53</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true">下一页</span>
+						      </a>
+						    </li>
+						  </ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+  	</div>
+  	<!--学员管理查看学习计划-->
+  	<div class="container">
+			<div class="row padding">
+				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+					<div class="card">
+						<div class="card-btn">
+							<div class="card-btn-text" id="newmodel">创建计划模版</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+					<div class="row card">
+						<div class="border">
+							<div class="list">
+								<div class="list-title li-one">学员姓名</div>
+								<div class="list-title li-three">模版名称</div>
+								<div class="list-title li-four">学习内容</div>
+							</div>
+							<div class="list">
+								<div class="list-li li-one">
+									<div class="li-label">
+										<p>熊猫</p>
+									</div>
+								</div>
+								<div class="list-li li-three">
+									<div class="li-label">
+										<p>各科中重点章节复习及练习</p>
+										<span class="btn-green">3天制</span>
+									</div>
+								</div>
+								<div class="list-li li-four">
+									<div class="li-wrapper">
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+											<div class="li-img">
+												<img src="image/bq.png"/>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+											<div class="li-img">
+												<img src="image/bq.png"/>
+											</div>
+										</div>
+										<div class="li">
+											<div class="li-label">
+												<span class="btn-yellow">第一天</span>
+											</div>
+											<div class="li-content">
+												<p>语文：1、一段话欣赏（30分钟）  2、语文练习（60分钟）；</p>
+												<p>数学：三年级下册复习、数字的认识预习</p>
+											</div>
+											<div class="li-img">
+												<img src="image/bq.png"/>
+											</div>
+										</div>
+									</div>
+									<div class="li-more">
+										<span class="li-more-text">展开全部</span>
+										<span class="glyphicon glyphicon-chevron-down"></span>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="clearfix">
+						  <ul class="pagination pull-right">
+						    <li>
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true">上一页</span>
+						      </a>
+						    </li>
+						    <li><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li><a href="#">...</a></li>
+						    <li><a href="#">53</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true">下一页</span>
+						      </a>
+						    </li>
+						  </ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+  	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$('.li-more').click(function(){
+    			if ($(this).parents('.list').hasClass('active')) {
+    				$(this).parents('.list').removeClass('active')
+    				$(this).find('.li-more-text').text('展开全部')
+    			} else {
+    				$(this).parents('.list').addClass('active')
+    				$(this).find('.li-more-text').text('收起全部')
+    			}
+    			$(this).toggleClass('active')
+    		})
+    	})
+    </script>
+  </body>
+</html>

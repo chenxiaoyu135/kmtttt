@@ -1,0 +1,58 @@
+.padding {
+	margin-top: 100px;
+}
+.card {
+	background: #FFFFFF;
+	-webkit-box-shadow: 0 2px 10px 0 rgba(157,166,195,0.30);
+	-webkit-border-radius: 4px;
+	box-shadow: 0 2px 10px 0 rgba(157,166,195,0.30);
+	border-radius: 4px;
+}
+.list {
+	width: 100%;
+}
+.list-title{
+	padding: 0;
+	text-align: center;
+	padding: 1.5rem .5rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #999;
+	font-size: .9em;
+	border-bottom: solid 2px #eee;
+}
+.list-li {
+	font-size: .9em;
+	text-align: center;
+	padding: 2rem .5rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.list:hover .list-li {
+	background: #eee;
+}
+.list-li img {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.text-green {
+	text-decoration: underline;
+	color: #52CC60;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+.pagination {
+	margin: 3rem 2rem;
+	color: #999;
+}
+.pagination>li>a {
+	color: #999;
+	font-size: .9em;
+}
+.pagination>li.active>a,
+.pagination>li>a:hover {
+	background: #808080;
+	color: #fff;
+}

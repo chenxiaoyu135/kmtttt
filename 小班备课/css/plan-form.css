@@ -1,0 +1,94 @@
+.padding {
+	margin-top: 100px;
+}
+.card {
+	background: #FFFFFF;
+	box-shadow: 0 2px 10px 0 rgba(157,166,195,0.30);
+	border-radius: 4px;
+	padding: 1.5rem;
+	margin-bottom: .5rem;
+}
+.li {
+	padding: 0 .5rem;
+}
+.li-title {
+	color: #333333;
+	position: relative;
+	font-weight: bold;
+	font-size: .9em;
+	padding-left: 2rem;
+}
+.li-title:before {
+	content: "";
+	position: absolute;
+	top: .5rem;
+	left: 0;
+	width: .8rem;
+	height: .8rem;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: #52CC60;
+}
+.li-content {
+	background: #F7F8FA;
+	border: 1px solid #F0F0F2;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 1rem;
+	font-size: .9em;
+	width: 100%;
+	margin: 1rem auto;
+}
+.li-edit {
+	color: #999;
+}
+.li-edit-btn {
+	padding-top: .5rem;
+	text-align: right;
+}
+.li-edit-btn span {
+	background: #FFFFFF;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	font-size: .9em;
+	color: #52CC60;
+	padding: .5rem;
+	cursor: pointer;
+}
+.li-items {
+	padding: 1rem 0;
+}
+.li-item {
+	padding: 1rem 0;
+}
+.li-label,
+.li-text {
+	font-size: .9em;
+	color: #999;
+	margin-right: 2rem;
+}
+.li-text {
+	cursor: pointer;
+}
+.li-text.active {
+	color: #333;
+}
+.li-text img {
+	width: 1.5rem;
+	margin-right: .5rem;
+}
+.li-text span {
+	vertical-align: middle;
+}
+.li-submit {
+	margin: 4rem auto;
+	text-align: center;
+}
+.li-submit span {
+	background: #52CC60;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	padding: 1rem 3rem;
+	cursor: pointer;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>创建系列课程</title>
+    <!--引入样式-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/newDetails.css">
+
+    <!--引入jquery-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container ">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="log" src="image/login/Group%20106%20Copy@2x.png"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="addActive"><a href="javascript:;" >首页</a>
+
+                </li>
+                <li class="addActive"><a href="javascript:;" >题目编辑</a>
+                    <ul class="showHide">
+                        <li>开始录题</li>
+                        <li>录拆分题</li>
+                        <li>Ai加工</li>
+                        <li>题目考点</li>
+                    </ul>
+
+                </li>
+                <li class="addActive"><a href="javascript:;" >题目审核</a>
+                    <ul class="showHide">
+                        <li>未通过题目</li>
+                        <li>已发布题库</li>
+                    </ul>
+                </li>
+                <li class="addActive"><a href="javascript:;" >添加身份</a>
+                    <ul class="showHide">
+                        <li>添加录题员</li>
+                        <li>添加老师</li>
+                    </ul>
+                </li>
+                <li class="addActive"><a href="javascript:;" >操作日志</a></li>
+                <li  class="active addActive"  ><a href="./courseware.html" >课件录入</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><img class="headicon" src="image/login/ssj_qrcode.png"/></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle headname" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">李老师 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="logout"><img src="image/header/out.png"/><span>退出</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row padding">
+        <div><span class="title">当前位置：课件录入>课程内容明细><span class="text-green">创建课程内容详情</span></span></div>
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="li">
+                    <!--课程内容-->
+                    <div class="li-title">课程内容</div>
+                    <div class="li-items">
+                        <div class="li-item clearfix">
+                            <div class="li-label">单元</div>
+                            <input class="li-input form-control" type="text" name="name" id="name" placeholder="输入单元"/>
+
+                        </div>
+                        <div class="li-item clearfix">
+                            <div class="li-label">内容</div>
+                            <textarea class="li-input form-control" type="text" name="name" id="name" placeholder="输入课程内容 " style="height: 180px"></textarea>
+
+                        </div>    <div class="li-item clearfix">
+                        <div class="li-label">模块</div>
+                        <textarea class="li-input form-control" type="text" name="name" id="name" placeholder="输入课程内容 " style="height: 180px"></textarea>
+
+                    </div>
+
+
+                        <div class="li-item clearfix">
+                            <div class="li-label">时长</div>
+                            <input class="li-input form-control" type="text" name="name" id="name"
+                                   placeholder="输入课程时长"/>
+                        </div>    <div class="li-item clearfix">
+                        <div class="li-label">课时</div>
+                        <input class="li-input form-control" type="text" name="name" id="name"
+                               placeholder="输入课程课时"/>
+                    </div>
+
+                    </div>
+                </div>
+                <div class="li">
+                    <!--课程附件-->
+                    <div class="li-title">课程附件  <span class="hint">（<span style="color: red ;display: inline" >*</span>支持jpg／jpeg格式，文件不超过xxM,尺寸最好控制228*160px)</span></div>
+
+                    <div class="li-items">
+                        <div class="li-item upload"> <span class="glyphicon glyphicon-plus  dot" aria-hidden="true"></span>
+                            <span class="text-green">点击添加课程封面</span></div>
+
+                    </div>
+                    <div class="li-items">
+                        <div class="li-item-div"><img src="image/details/Group%209@2x.png" alt=""> <span>这是文件名称.mp4</span> <div class="li-items-right"><span>上传中 <i></i> 20%</span></div>
+                            <span class="glyphicon glyphicon-remove hint-del" aria-hidden="true"></span></div>
+
+                    </div>
+                    <div class="li-items">
+                        <div class="li-item-div"><img src="image/details/Group%209@2x.png" alt=""> <span>这是文件名称.mp4</span> <span class="succeed">上传成功</span>
+                            <span class="glyphicon glyphicon-remove hint-del" aria-hidden="true"></span></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="li-submit"><span class="saveCancel active">确定保存</span><span class="saveCancel">取消</span></div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/createCourse.js"></script>
+
+</body>
+</html>

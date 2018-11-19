@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>知识管理平台</title>
+    <!-- Bootstrap -->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/correction.css"/>
+    <script src="js/mask.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="log" src="image/n_c/log.png"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class=" addActive"><a href="newTemplate.html">课前备课 </a></li>
+                <li class="addActive"><a href="management.html">学员管理</a></li>
+                <li class="addActive"><a href="plan.html">学习计划维护</a></li>
+                <li class="addActive  "><a href="print.html">打印管理</a></li>
+                <li class="addActive active"><a href="correction.html">作业批改</a></li>
+                <li class="addActive"><a href="javascript:;">难题解答</a><span class="nav-bedge ">更新2张</span></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><img class="headicon" src="image/ssj_qrcode.png"/></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle headname" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">李老师 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="logout"><img src="image/out.png"/><span>退出</span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="padding">&nbsp;</div>
+    <div class="row">
+        <div class="card">
+            <div class="nodata">
+                <img src="image/nodata_5.png"/>
+                <p>今日还没有作业需要批改</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-4">
+            <div class="card">
+                <div class="card-flex clearfix">
+                    <div class="card-text">
+                        5月30日语文作业批改
+                    </div>
+                    <div class="card-btn-two">
+                        更新2张
+                    </div>
+                </div>
+            </div>
+            <div class="card card2">
+                <ul class="list">
+                    <li class="li">
+                        <div class="li-title    li-title-active" data-toggle="collapse" href="#collapse1"
+                             aria-expanded="false" aria-controls="collapse1">
+                            <span>陈彦小姐姐(已完成2/4)</span>
+                        </div>
+                    </li>
+                    <li class="li">
+                        <div class="li-title " data-toggle="collapse" href="#collapse2" aria-expanded="false"
+                             aria-controls="collapse2">
+                            <span>陈彦小姐姐(已完成2/4)</span>
+                        </div>
+                    </li>
+                    <li class="li">
+                        <div class="li-title  " data-toggle="collapse" href="#collapse1" aria-expanded="false"
+                             aria-controls="collapse1">
+                            <span>陈彦小姐姐(已完成2/4)</span>
+
+                        </div>
+
+                    </li>
+                    <li class="li">
+                        <div class="li-title " data-toggle="collapse" href="#collapse2" aria-expanded="false"
+                             aria-controls="collapse2">
+                            <span>陈彦小姐姐(已完成2/4)</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-8 size">
+            <!--第一步-->
+            <div class="card cardTwo">
+                <div class="card-list row">
+                    <div class="card-li">
+                        <div class="card-li-label">作业涉及知识点</div>
+                        <div class="card-li-div">
+                            <img src="image/n_c/icon_1.png" alt="">
+                            <span>添加知识点</span>
+                        </div>
+                        <div class="list clearfix">
+                            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8 list-li"><span>认识“一、二”等7个生字；认识田字格，会写“一、二”等四个字和横、竖2种笔画。</span>
+                            </div>
+                            <div class="col-lg-2 col-md-8 col-sm-8 col-xs-8 list-li"><span>关联题数</span> <span
+                                    class="list-number">4</span></div>
+                            <div class="col-lg-1 col-md-8 col-sm-8 col-xs-8 list-li"><span
+                                    class="glyphicon glyphicon-trash"></span></div>
+
+                        </div>
+                        <div class="list clearfix">
+                            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8 list-li"><span>认识“一、二”等7个生字；认识田字格，会写“一、二”等四个字和横、竖2种笔画。</span>
+                            </div>
+                            <div class="col-lg-2 col-md-8 col-sm-8 col-xs-8 list-li"><span>关联题数</span> <span
+                                    class="list-number">4</span></div>
+                            <div class="col-lg-1 col-md-8 col-sm-8 col-xs-8 list-li"><span
+                                    class="glyphicon glyphicon-trash"></span></div>
+                        </div>
+                        <div class="listT clearfix">
+                            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8 list-li"><span>认识“一、二”等7个生字；认识田字格，会写“一、二”等四个字和横、竖2种笔画。</span>
+                            </div>
+                            <div class="col-lg-2 col-md-8 col-sm-8 col-xs-8 list-li"><span>关联题数</span> <span
+                                    class="list-number">4</span></div>
+                            <div class="col-lg-1 col-md-8 col-sm-8 col-xs-8 list-li"><span
+                                    class="glyphicon glyphicon-trash"></span></div>
+                        </div>
+                    </div>
+                    <div class="card-li">
+                        <div class="card-li-label">作业原图</div>
+                        <div class="canvas-container">
+                            <div class="canvas-wrapper">
+                                <canvas id="correct" class="canvas"></canvas>
+                                <!--<canvas id="correct_sec" class="canvas-sec"></canvas>-->
+                                <div class="canvas-mask">
+                                    <div class="canvas-mask-text">
+                                        <div class="canvas-mask-edit">
+                                            <div class="canvas-mask-content">
+                                                <span class="canvas-mask-content-text">题号</span>
+                                                <input type="text" class="canvas-mask-input" id="questionNum"
+                                                       placeholder="输入错题题号"/>
+                                                <span class="canvas-mask-content-text-two">/</span>
+                                                <span class="canvas-mask-content-text">第</span>
+                                                <input type="text" class="canvas-mask-input-small" id="questionRow"/>
+                                                <span class="canvas-mask-content-text">行</span>
+                                                <input type="text" class="canvas-mask-input-small" id="questionCol"/>
+                                                <span class="canvas-mask-content-text">列</span>
+                                            </div>
+                                            <div class="canvas-mask-cancel" id="cropperCancel"></div>
+                                            <div class="canvas-mask-true" id="cropperSuc"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="canvas-edit">
+                                <div class="canvas-edit-ul">
+                                    <div class="canvas-edit-li" id="recall">
+                                        <img src="image/n_c/tools_rotatingleft_nor@2x.png"/>
+                                    </div>
+                                    <div class="canvas-edit-li" id="reverseRecall">
+                                        <img src="image/n_c/tools_rotatingright_nor@2x%20(1).png"/>
+                                    </div>
+                                    <div class="canvas-edit-li" id="cropperBtn">
+                                        <img src="image/tools_cut@2x.png"/>
+                                    </div>
+                                    <div class="canvas-edit-li" id="scaleMin">
+                                        <img src="image/tools_smaller@2x.png"/>
+                                    </div>
+                                    <div class="canvas-edit-li" id="scaleMax">
+                                        <img src="image/tools_bigger@2x.png"/>
+                                    </div>
+                                    <div class="canvas-edit-li" id="littleHand">
+                                        <img src="image/n_c/littleHand.png" alt="" class="littleh">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="well clearfix margin">
+                            <div class="well-wrap">
+                                <div class="well-cell  ">
+                                    <img class="well-cell-img" src="image/pencil.png"/>
+                                </div>
+                                <div class="well-cell">
+                                    <img class="well-cell-img" src="image/selected.png"/>
+                                </div>
+                                <div class="well-cell">
+                                    <img class="well-cell-img" src="image/selected.png"/>
+                                </div>
+                                <div class="well-cell">
+                                    <img class="well-cell-img" src="image/selected.png"/>
+                                    <img class="well-cell-icon" src="image/correct_icon.png"/>
+                                </div>
+                                <div class="well-cell">
+                                    <img class="well-cell-img" src="image/selected.png"/>
+                                </div>
+                                <div class="well-cell">
+                                    <img class="well-cell-img" src="image/selected.png"/>
+                                </div>
+                                <div class="well-cell">
+                                    <img class="well-cell-img" src="image/selected.png"/>
+                                    <img class="well-cell-icon" src="image/correct_icon.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-li">
+                        <div class="card-li-label">科目归类</div>
+                        <div class="card-li-class on">
+
+                            <span class="card-li-span">语文</span>
+                        </div>
+                        <div class="card-li-class">
+
+                            <span class="card-li-span">数学</span>
+                        </div>
+                        <div class="card-li-class">
+
+                            <span class="card-li-span">英语</span>
+                        </div>
+                        <div class="card-li-subject toggle">
+                            <span>纠正学科</span>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div>模糊更替</div>
+                        <div class="toggle-no">没有错题</div>
+                    </div>
+                    <div class="card-li">
+                        <div class="card-li-label">错题裁剪</div>
+                        <div class="card-li-imgs clearfix">
+                            <div class="card-li-img">
+                                <img class="card-li-photo" src="image/add.png"/>
+                                <!--<img class="card-li-icon" src="image/correct_true@2x.png"/>-->
+                                <img class="card-li-cancel" src="image/del@2x.png"/>
+                                <div class="card-li-footer">题号02（二），第2行6列</div>
+                            </div>
+                            <div class="card-li-img">
+                                <img class="card-li-photo" src="image/add.png"/>
+                                <!--<img class="card-li-icon" src="image/correct_true@2x.png"/>-->
+                                <img class="card-li-cancel" src="image/del@2x.png"/>
+                                <div class="card-li-footer">题号02（二），第2行6列</div>
+                            </div>
+                            <div class="card-li-img">
+                                <img class="card-li-photo" src="image/add.png"/>
+                                <!--<img class="card-li-icon" src="image/correct_true@2x.png"/>-->
+                                <img class="card-li-cancel" src="image/del@2x.png"/>
+                                <div class="card-li-footer">题号02（二），第2行6列</div>
+                            </div>
+                            <div class="card-li-img">
+                                <img class="card-li-photo" src="image/add.png"/>
+                                <!--<img class="card-li-icon" src="image/correct_true@2x.png"/>-->
+                                <img class="card-li-cancel" src="image/del@2x.png"/>
+                                <div class="card-li-footer">题号02（二），第2行6列</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-next row">
+
+                        <div class="text-active">确认提交</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-container active">
+    <div class="fixed-wrapper ">
+        <div class="fixed-title clearfix">
+            <div class="fixed-title-left">
+               作业涉及知识点
+            </div>
+            <div class="fixed-title-right" id="loadMoreKnowledge">
+                加载全部
+            </div>
+        </div>
+        <ul class="fixed-list">
+            <li class="fixed-li">
+                <div class="fixed-li-title" data-toggle="collapse" href="#collapse3" aria-expanded="false"
+                     aria-controls="collapse3">
+                    <span>第一单元：1～5的认识和加减法</span>
+                    <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+                </div>
+                <div class="collapse" id="collapse3">
+                    <div class="fixed-well">
+                        <div class="fixed-well-cell">
+                            <img src="image/normal.png"/>
+                            <span>1、1～5的认识</span>
+                        </div>
+                        <div class="fixed-well-cell">
+                            <img src="image/selected.png"/>
+                            <span>2、比大小</span>
+                        </div>
+                        <div class="fixed-well-cell">
+                            <img src="image/selected.png"/>
+                            <span>3、1-5的加减法</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="fixed-li">
+                <div class="fixed-li-title" data-toggle="collapse" href="#collapse4" aria-expanded="false"
+                     aria-controls="collapse4">
+                    <span>第二单元：认识图形（一）</span>
+                    <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+                </div>
+                <div class="collapse" id="collapse4">
+                    <div class="fixed-well">
+                        <div class="fixed-well-cell">
+                            <img src="image/selected.png"/>
+                            <span>1、长方体、正方体、圆柱、球文字超多文字超多文字超多</span>
+                        </div>
+                        <div class="fixed-well-cell">
+                            <img src="image/selected.png"/>
+                            <span>用字母表示数</span>
+                        </div>
+                        <div class="fixed-well-cell">
+                            <img src="image/selected.png"/>
+                            <span>用字母表示数</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="fixed-li">
+                <div class="fixed-li-title" data-toggle="collapse" href="#collapse5" aria-expanded="false"
+                     aria-controls="collapse5">
+                    <span>陈彦小姐姐(已完成2/4)</span>
+                    <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+                </div>
+                <div class="collapse" id="collapse5">
+                    <div class="fixed-well">
+                        <div class="fixed-well-cell">
+                            <img src="image/selected.png"/>
+                            <span>用字母表示数asdfasdfasdfasdfasfsf</span>
+                        </div>
+                        <div class="fixed-well-cell">
+                            <img src="image/selected.png"/>
+                            <span>用字母表示数</span>
+                        </div>
+                        <div class="fixed-well-cell">
+                            <img src="image/selected.png"/>
+                            <span>用字母表示数</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <div class="fixed-buttons clearfix">
+            <div class="fixed-btn" id="knowledgeCancelBtn">取消</div>
+            <div class="fixed-btn-active" id="knowledgeSubmitBtn">确定</div>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/correct.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/correction.js"></script>
+</body>
+</html>

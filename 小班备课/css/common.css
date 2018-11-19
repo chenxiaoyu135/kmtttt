@@ -1,0 +1,25 @@
+body {
+	background: #F6F7FB;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+.color-green {
+	color: #52CC60 !important;
+}
+.color-purple {
+	color: #612D00 !important;
+}
+.fontweight {
+	font-weight: bold;
+}
+.text-indent {
+	text-indent: 2.6rem;
+}
+.nodata {
+	text-align: center;
+	padding: 250px 20px !important;
+}
+.nodata p {
+	padding-top: 50px;
+	font-size: 18px;
+	color: #65B800;
+}

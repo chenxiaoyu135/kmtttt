@@ -1,0 +1,367 @@
+
+
+.padding {
+    margin-top:90px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px 0 rgba(157, 166, 195, 0.30);
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+.li {
+    padding: 0 1.25rem;
+}
+
+.row .title  {
+    color: #999999;
+    margin-right: .2rem;
+}
+.li-title {
+    color: #333333;
+    position: relative;
+    font-weight: 800  ;
+    font-size: 1em  ;
+
+}
+
+.li-title:before {
+    content: "";
+    position: absolute;
+    left: -1.4rem;
+    top: .45rem;
+    width: .8rem;
+    height: .8rem;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #52CC60;
+}
+.wrap {
+    margin-left: 28em;
+    margin-right: 28rem;
+}
+
+.wrap div span {
+    color: #666666;
+    display: block;
+    padding: .5rem;
+}
+
+ .text-green {
+    color: #52CC60;
+    display: inline-block;
+}
+.title{
+    margin-left: 50px;
+}
+.li-items {
+    padding: 1rem 0;
+}
+
+.li-item {
+    font-size: .9em;
+    color: #666;
+    margin: 2rem auto;
+}
+
+.li-label {
+    float: left;
+    margin-right: 2rem;
+    padding: .75rem 0;
+}
+
+.li-input {
+    float: left;
+
+    border: none;
+    background: #F5F5F5;
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width:70%;
+    margin-right: 4rem;
+}
+
+.li-input-container {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-right: 4rem;
+    z-index: 99;
+}
+
+.li-input-container > .li-input {
+    width: 100%;
+    z-index: 100;
+}
+
+.li-input-list {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 0 6px 0 rgba(66, 66, 66, 0.10);
+    box-shadow: 0 0 6px 0 rgba(66, 66, 66, 0.10);
+}
+
+.li-input-li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.li-input-li:hover {
+    background: #F5F5F5;
+}
+
+.li-btns {
+    float: left;
+    border: none;
+    width: 50%;
+    margin-right: 4rem;
+}
+
+
+.li-sex {
+    float: left;
+
+    width: 50%;
+    margin-right: 4rem;
+}
+
+.li-btn {
+    border: none;
+    background: #F5F5F5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.li-btn-text {
+    padding-right: 8rem;
+    color: #999;
+}
+
+.li-btn-text.active {
+    color: #333;
+}
+
+.li-input-red {
+    display: none;
+}
+
+.li-input-red.active {
+    display: block;
+    float: left;
+    padding: .75rem 0;
+    color: red;
+}
+
+.li-sex-btn {
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    padding: .5rem 1.5rem .75rem 1.5rem;
+    color: #999999;
+    cursor: pointer;
+}
+
+.li-sex-btn img {
+    width: 1.5rem;
+}
+
+.li-sex-btn span {
+    vertical-align: middle;
+}
+.sex-blue {
+    border: 1px solid #549DFE;
+    color: #549DFE;
+}
+
+.sex-red {
+    border: 1px solid #FF8695;
+    color: #FF8695;
+}
+
+.li-item-btn {
+    padding: .4rem !important;
+
+}
+
+.hint {
+    display: inline-block !important;
+    color: #e5e5e5 !important;
+}
+
+.li-items span {
+    display: inline-block !important;
+}
+
+.li-item-btn-menu,
+.li-item-btn-img,
+.li-item-btn {
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    padding: .5rem 1.5rem;
+    color: #c5c5c5;
+    cursor: pointer;
+    display: inline-block;
+    margin: .5rem 1rem;
+    font-size: .9em;
+    background: #F5F5F5;
+}
+
+.li-item-btn.active {
+    background-color: #52CC60;
+    color: white;
+
+}
+.li-item-btn-img img {
+    width: 1.75rem;
+}
+
+.li-item-btn-img span {
+    vertical-align: middle;
+}
+.upload {
+    margin: 0;
+    width: 16rem;
+    height: 12rem;
+    background-color: #F5F5F5;
+    text-align: center;
+    cursor: pointer;
+}
+
+.li-item .dot {
+    background-color: #52CC60;
+    color: white;
+    margin-top: 40px;
+    border-radius: 50%;
+    width: 2rem;
+    line-height: 2rem;
+
+}
+.upload .text-green{
+    display: block!important;
+    margin-top: .4rem;
+}
+.li-submit {
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 2.5rem;
+}
+.li-submit span {
+    display: inline-block  ;
+    margin-left: 20px;
+    border: 1px solid #52CC60 ;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #52CC60 ;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    width: 14rem;
+}
+.li-submit .active{
+    background-color:#52CC60 ;
+    color: white;
+}
+.li-item-btn-menu {
+    position: relative;
+}
+
+.menu-box {
+    display: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.menu-box.active {
+    display: block;
+    position: absolute;
+    top: 120%;
+    left: -50%;
+    width: 200%;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    -webkit-box-shadow: 0 0 6px 0 rgba(66, 66, 66, 0.10);
+    -webkit-border-radius: 6px;
+    box-shadow: 0 0 6px 0 rgba(66, 66, 66, 0.10);
+    border-radius: 6px;
+    padding: 1rem;
+    z-index: 999;
+}
+
+.menu-box:before {
+    position: absolute;
+    top: -14px;
+    left: 47%;
+
+    content: url("../image/arrow_top.png");
+}
+
+.menu-input {
+    border: none;
+    background: #F5F5F5;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+.menu-btn {
+    text-align: center;
+}
+.li-items-right{
+    display: inline;
+    float: right;
+    margin-right: 5rem;
+}
+.li-items-right i{
+    display: inline-block;
+    width:10rem;
+    height: 10px;
+    background-color: #ededed;
+    border-radius: 4px;
+    position: relative;
+}
+.li-items-right i:before{
+    content: '';
+    display: inline-block;
+    width: 4rem;
+    height: 10px;
+    background-color: #52CC60;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.menu-btn-green {
+    background-image: linear-gradient(90deg, #8AE899 0%, #52CC60 100%);
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    margin: 1.25rem .5rem .5rem .5rem;
+    padding: .5rem 2.5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+.hint-del{
+    display: inline-block;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    color: white !important;
+    position: absolute;
+    right: 0;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.li-item-div{
+    position: relative;
+}
+.succeed{
+    margin-left:39rem;
+}

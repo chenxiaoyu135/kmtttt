@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>知识管理平台</title>
+
+    <!-- Bootstrap -->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/knowledge_2.css"/>
+		<script src="js/mask.js" type="text/javascript" charset="utf-8"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img class="log" src="image/log.png"/></a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="home.html">课前备课<span class="sr-only">(current)</span></a></li>
+		        <li><a href="management.html">学员管理</a></li>
+		        <li><a href="plan.html">学习计划维护</a></li>
+		        <li><a href="print.html">打印管理</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#"><img class="headicon" src="image/ssj_qrcode.png"/></a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle headname" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">李老师 <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		        <li><a href="#" class="logout"><img src="image/out.png"/><span>退出</span></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+  	<div class="container">
+  		<div class="padding">&nbsp;</div>
+			<div class="row head card">
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<h4>熊猫同学</h4>
+					<h6>7月份第一周学习计划进度</h6>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<h6>语：作文小练习</h6>
+					<h6>数：表内除法（一）+错题回顾</h6>
+					<h6>英：陈述句—表达“它是一个做某事的好地方”的句型：“It´s a great </h6>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<h6 class="clearfix">当前的学习进度<p class="pull-right color-green">30%</p></h6>
+					<div class="progress">
+					  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+					    <span class="sr-only">40% Complete (success)</span>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<div class="mask"></div>  <!--第一步取消active  第二步才有active-->
+					<div class="card">
+						<div class="sub clearfix">
+							<div class="sub-label">科目</div>
+							<div class="sub-items">
+								<div class="sub-item active">语文</div>
+								<div class="sub-item">数学</div>
+								<div class="sub-item">英语</div>
+							</div>
+						</div>
+						<div class="sub clearfix">
+							<div class="sub-label">教材</div>
+							<div class="sub-items">
+								<div class="sub-item active">全部</div>
+								<div class="sub-item">人教版</div>
+								<div class="sub-item">北师大版</div>
+								<div class="sub-item">xxx版</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="input-group">
+						  <span class="input-group-addon" id="sizing-addon2">
+						  	<span class="glyphicon glyphicon-search"></span>
+						  </span>
+						  <input type="text" class="form-control" placeholder="快速搜索知识点" aria-describedby="sizing-addon2">
+						  <span class="input-group-addon search-btn"><span>搜索</span></span>
+						</div>
+						<ul class="list">
+							<li class="li">
+								<div class="li-title" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+									<img src="image/selected.png"/>
+									<span>第一章  简易方程asdfasfdasdfasdfasdfasf</span>
+									<span class="pull-right glyphicon glyphicon-chevron-down"></span>
+								</div>
+								<div class="collapse" id="collapse1">
+								  <div class="well">
+								    <div class="well-cell">
+								    	<img src="image/selected.png"/>
+											<span>用字母表示数asdfasdfasdfasdfasfsf</span>
+								    </div>
+								    <div class="well-cell">
+								    	<img src="image/selected.png"/>
+											<span>用字母表示数</span>
+								    </div>
+								    <div class="well-cell">
+								    	<img src="image/selected.png"/>
+											<span>用字母表示数</span>
+								    </div>
+								  </div>
+								</div>
+							</li>
+							<li class="li">
+								<div class="li-title" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse1">
+									<img src="image/normal.png"/>
+									<span>第一章  简易方程</span>
+									<span class="pull-right glyphicon glyphicon-chevron-down"></span>
+								</div>
+								<div class="collapse" id="collapse2">
+								  <div class="well">
+								    <div class="well-cell">
+								    	<img src="image/normal.png"/>
+											<span>用字母表示数</span>
+								    </div>
+								    <div class="well-cell">
+								    	<img src="image/selected.png"/>
+											<span>用字母表示数</span>
+								    </div>
+								    <div class="well-cell">
+								    	<img src="image/selected.png"/>
+											<span>用字母表示数</span>
+								    </div>
+								  </div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-8">
+					<!--第一步-->
+					<div class="card">
+						<!--步骤进度条-->
+						<div class="card-nav row">
+							<div class="nav-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="nav-image">
+									<span class="nav-span nav-span-white">1</span>
+									<img class="nav-icon" src="image/ok1.png"/>
+								</div>
+								<div class="nav-text nav-text-green">勾选知识点</div>
+							</div>
+							<div class="nav-line col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+							<div class="nav-item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<div class="nav-image">
+									<span class="nav-span nav-span-gray">2</span>
+									<img class="nav-icon" src="image/wait3.png"/>
+								</div>
+								<div class="nav-text nav-text-gray">整理讲义内容</div>
+							</div>
+							<div class="nav-line col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+							<div class="nav-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="nav-image">
+									<span class="nav-span nav-span-gray">3</span>
+									<img class="nav-icon" src="image/wait3.png"/>
+								</div>
+								<div class="nav-text nav-text-gray">预览提交</div>
+							</div>
+						</div>
+						<div class="card-list row">
+							<div class="card-li">
+								<div class="card-li-label">课程主题</div>
+								<div class="card-li-content">
+									<div class="card-li-edit" contenteditable="true">
+										<p>请输入本次教学目标</p>
+									</div>
+									<!--<div class="card-li-btn"><span>+继续编辑</span></div>-->
+								</div>
+								<!--<div class="card-li-content">
+									<textarea class="card-li-textarea" name="theme" placeholder="请输入本次教学目标"></textarea>
+								</div>-->
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">教学内容</div>
+								<div class="card-li-content">
+									<div class="card-li-edit" contenteditable="false">
+										<p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+										<p>2、设计费老司机</p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">教学目标</div>
+								<div class="card-li-content">
+									<div class="card-li-edit" contenteditable="false">
+										<p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+										<p>2、设计费老司机</p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">重点难点</div>
+								<div class="card-li-content">
+									<div class="card-li-edit" contenteditable="false">
+										<p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+										<p>2、设计费老司机</p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">选择考点</div>
+								<div class="card-li-content well">
+									<div class="card-li-content-label">
+										<span class="card-li-content-span">知识点1</span>
+										<span class="card-li-content-span-yellow">重点字词</span>
+									</div>
+							    <div class="well-cell">
+							    	<img src="image/normal.png"/>
+										<span>用字母表示数</span>
+							    </div>
+							    <div class="well-cell">
+							    	<img src="image/selected.png"/>
+										<span>用字母表示数</span>
+							    </div>
+							    <div class="well-cell">
+							    	<img src="image/selected.png"/>
+										<span>用字母表示数</span>
+							    </div>
+								</div>
+								<div class="card-li-content well">
+									<div class="card-li-content-label">
+										<span class="card-li-content-span">知识点1</span>
+										<span class="card-li-content-span-yellow">重点字词</span>
+									</div>
+							    <div class="well-cell">
+							    	<img src="image/normal.png"/>
+										<span>用字母表示数</span>
+							    </div>
+							    <div class="well-cell">
+							    	<img src="image/selected.png"/>
+										<span>用字母表示数</span>
+							    </div>
+							    <div class="well-cell">
+							    	<img src="image/selected.png"/>
+										<span>用字母表示数</span>
+							    </div>
+								</div>
+							</div>
+						</div>
+						<!--跳转步骤-->
+						<div class="btn-next row">
+							<div class="text-active">下一步</div>
+						</div>
+					</div>	
+					<!--第二步-->
+					<div class="card">
+						<!--步骤进度条-->
+						<div class="card-nav row">
+							<div class="nav-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="nav-image">
+									<span class="nav-span nav-span-white">1</span>
+									<img class="nav-icon" src="image/ok1.png"/>
+								</div>
+								<div class="nav-text nav-text-green">勾选知识点</div>
+							</div>
+							<div class="nav-line nav-line-green col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+							<div class="nav-item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<div class="nav-image">
+									<span class="nav-span nav-span-white">2</span>
+									<img class="nav-icon" src="image/ing2.png"/>
+								</div>
+								<div class="nav-text nav-text-yellow">整理讲义内容</div>
+							</div>
+							<div class="nav-line col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+							<div class="nav-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="nav-image">
+									<span class="nav-span nav-span-gray">3</span>
+									<img class="nav-icon" src="image/wait3.png"/>
+								</div>
+								<div class="nav-text nav-text-gray">预览提交</div>
+							</div>
+						</div>
+						<div class="card-items row">
+							<div class="sub-two">
+								<div class="sub-two-label">学习能力匹配</div>
+								<div class="sub-two-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</div>
+								<div class="sub-two-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</div>
+							</div>
+							<div class="card-items-wrapper">
+								<div class="sub clearfix">
+									<div class="sub-label">科目</div>
+									<div class="sub-items ">
+										<div class="sub-item active">语文</div>
+										<div class="sub-item">数学</div>
+										<div class="sub-item">英语</div>
+									</div>
+								</div>
+								<div class="sub clearfix">
+									<div class="sub-label">教材</div>
+									<div class="sub-items">
+										<div class="sub-item active">全部</div>
+										<div class="sub-item">人教版</div>
+										<div class="sub-item">北师大版</div>
+										<div class="sub-item">xxx版</div>
+										<div class="sub-item">北师大版</div>
+										<div class="sub-item">xxx版</div>
+										<div class="sub-item">北师大版</div>
+										<div class="sub-item">xxx版</div>
+										<div class="sub-item">北师大版</div>
+										<div class="sub-item">xxx版</div>
+										<div class="sub-item">北师大版</div>
+										<div class="sub-item">xxx版</div>
+									</div>
+								</div>
+								<div class="sub clearfix">
+									<div class="sub-label">类型</div>
+									<div class="sub-items">
+										<div class="sub-item active">全部</div>
+										<div class="sub-item">人教版</div>
+										<div class="sub-item">北师大版</div>
+										<div class="sub-item">xxx版</div>
+									</div>
+								</div>
+							</div>
+							<div class="sub-max"><span class="sub-max-text">展开</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+						</div>
+						<div class="card-list row">
+							<div class="card-li">
+								<div class="card-li-item">
+									<div class="card-li-content-header clearfix">
+										<div class="pull-left">
+											<div class="card-li-label">复习回顾</div>
+										</div>
+										<div class="pull-right clearfix">
+											<span class="card-li-content-header-item active">
+												<img src="image/selected.png"/>
+												<span>上节课错题回顾</span>
+											</span>
+											<span class="card-li-content-header-item active">
+												<img src="image/selected.png"/>
+												<span>上节课作业回顾</span>
+											</span>
+											<span class="card-li-content-header-item">
+												<img src="image/normal.png"/>
+												<span>自定义加题</span>
+											</span>
+										</div>
+									</div>	
+								</div>
+								<div class="card-li-content">
+									<div class="card-li-edit" contenteditable="false">
+										<p class="card-li-title-label">错题回顾</p>
+										<p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+										<p>2、设计费老司机</p>
+									</div>
+									<div class="card-li-edit" contenteditable="false">
+										<p class="card-li-title-label">作业回顾</p>
+										<p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+										<p>2、设计费老司机</p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">同步训练</div>
+								<!--知识点1-->
+								<div class="card-li-content">
+									<div class="card-li-content-label">
+										<span class="card-li-content-span">知识点1</span>
+										<span class="card-li-content-span-yellow">重点字词</span>
+									</div>
+									<div class="card-li-edit">
+										<p class="font-weight">看拼音，写词语。</p>
+										<p>liáng péng (        ) zhuāng shì (       ) qiáo jiàn (       )</p>
+										<p>shuài lǐng (        ) mì shí (       ) sǒng lì (       )</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析:</p>
+										<p>liáng péng (        ) zhuāng shì (       ) qiáo jiàn (       )</p>
+										<p>shuài lǐng (        ) mì shí (       ) sǒng lì (       )</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>在讲义显示答案及解析</span>
+										</div>
+									</div>
+								</div>
+								<!--知识点2-->
+								<div class="card-li-content">
+									<div class="card-li-content-label">
+										<span class="card-li-content-span">知识点2</span>
+										<span class="card-li-content-span-yellow">多音字词</span>
+									</div>
+									<div class="card-li-edit">
+										<p class="font-weight">多音字组词。</p>
+										<p>冠：guān（  ）；guàn（  ）  </p>
+										<p>场：chǎng（  ）；cháng（  ）</p>
+										<p>结：jiē（  ）； jié（  ）</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析：</p>
+										<p>冠：guān（ 鸡冠 ）；guàn（ 冠军 ）  </p>
+										<p>场：chǎng（ 场面 ）；cháng（ 场景 ）</p>
+										<p>结：jiē（ 结实 ）； jié（ 结网 ）</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>在讲义显示答案及解析</span>
+										</div>
+									</div>
+								</div>
+								<!--知识点3-->
+								<div class="card-li-content">
+									<div class="card-li-content-label">
+										<span class="card-li-content-span">知识点3</span>
+										<span class="card-li-content-span-yellow">词语搭配</span>
+									</div>
+									<div class="card-li-edit">
+										<p class="font-weight">我会填词语。</p>
+										<p>明媚的（ ） 明艳的（ ） </p>
+										<p>明丽的（ ） 明亮的（ ）</p>
+										<p>温暖的（ ） 温和的（ ）</p>
+										<p>温柔的（ ） 温馨的（ ）</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析：</p>
+										<p>明媚的（ ） 明艳的（ ） </p>
+										<p>明丽的（ ） 明亮的（ ）</p>
+										<p>温暖的（ ） 温和的（ ）</p>
+										<p>温柔的（ ） 温馨的（ ）</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>在讲义显示答案及解析</span>
+										</div>
+									</div>
+								</div>
+								<!--知识点4-->
+								<div class="card-li-content">
+									<div class="card-li-content-label">
+										<span class="card-li-content-span">知识点4</span>
+										<span class="card-li-content-span-yellow">课内阅读</span>
+									</div>
+									<div class="card-li-edit">
+										<p class="font-weight">课内阅读。</p>
+										<p>夜晚,我在灯下写稿,一只飞蛾不停地在我头顶上飞来飞去,骚扰着我。趁它停下的时候,我一伸手捉住了它。只要我的手指稍一用力,它就不能动弹_____了。但它挣扎着,极力鼓动双翅,我感到一股生命的力量在我手中______，那样________！那样______！飞蛾那种求生的_____令我______,我忍不住放了它！  </p>
+										<p>1、给文中的加线字注音,并按原文填空。 </p>
+										<p>2、“鼓动”一词在文中的意思是（ ） A、扇动 B、煽动 </p>
+										<p>3、文中感叹号的作用是________。 </p>
+										<p>4、“我忍不住放了它！”这句话的含义是（ ）</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析：</p>
+										<p>夜晚,我在灯下写稿,一只飞蛾不停地在我头顶上飞来飞去,骚扰着我。趁它停下的时候,我一伸手捉住了它。只要我的手指稍一用力,它就不能动弹_____了。但它挣扎着,极力鼓动双翅,我感到一股生命的力量在我手中______，那样________！那样______！飞蛾那种求生的_____令我______,我忍不住放了它！  </p>
+										<p>1、给文中的加线字注音,并按原文填空。 </p>
+										<p>2、“鼓动”一词在文中的意思是（ ） A、扇动 B、煽动 </p>
+										<p>3、文中感叹号的作用是________。 </p>
+										<p>4、“我忍不住放了它！”这句话的含义是（ ）</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>在讲义显示答案及解析</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">专题拓展</div>
+								<div class="card-li-text">
+										<div class="card-li-text-btn">句子</div>
+										<div class="card-li-text-btn">欣怡小姐姐大姐姐大大姐姐大大大姐姐姐</div>
+									</div>
+								<div class="card-li-content">
+									<div class="card-li-content-label">
+										<span class="card-li-content-span"><img src="image/star_white.png"/><text>重点知识点</text></span>
+										<span class="card-li-content-span-yellow-two">扩句</span>
+									</div>
+									<div class="card-li-edit" contenteditable="false">
+										<p class="font-weight">要点梳理：</p>
+										<p>(1)想象扩句法。  </p>
+										<p>(2)描述扩句法。</p>
+										<p>(3)说明扩句法</p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+								<div class="card-li-text">考点1-扩句</div>
+								<div class="card-li-content">
+									<div class="card-li-edit">
+										<p class="font-weight">例题：</p>
+										<p>1. 扩句：他瞪了她。</p>
+										<p>2. 扩句：他买水。</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析：</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-li-content">
+									<div class="card-li-edit">
+										<p class="font-weight">练习：</p>
+										<p>1. 幼苗生长。 </p>
+										<p>2. 奶奶打水。</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析：</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">课外阅读</div>
+								<div class="card-li-content">
+									<div class="card-li-content-label">
+										<span class="card-li-content-span"><img src="image/star_white.png"/><text>重点知识点1</text></span>
+										<span class="card-li-content-span-yellow-two">写景阅读</span>
+									</div>
+									<div class="card-li-edit" contenteditable="false">
+										<p class="font-weight">要点梳理：</p>
+										<p>1.了解写景文章的类别    </p>
+										<p>2.明确写景的描写顺序</p>
+										<p>3.理解写景文章的层次</p>
+										<p>4.体会写景文的思想感情 </p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+								<div class="card-li-text">考点1-写景阅读</div>
+								<div class="card-li-content">
+									<div class="card-li-edit">
+										<p class="font-weight">例题：</p>
+										<p>当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。 冬的空灵，拒绝花草的装点，不为五谷折腰，更无需果香扬名，以冰为品，用雪作魂，铮铮铁骨，铿锵气概，让群山仰止，让河流驻足！ 面对高举的苍穹，裸露的大地，你终可以脱去一身的疲惫。当凛冽的寒冬冰封了那一季的风雨，才木然了红了樱桃，绿了芭蕉，才淡出了绿肥红瘦的争闹。任凭你蘸着晶莹，把它们辑成篇篇童话，随手抛向空中，碎成片片雪花，纷扬飘舞，挂满枝头，落满山坡，厚厚地铺满心底的世界。 冰消时如滴翠，悄然无声；雪融时如玉碎，( )。拥着至纯、至诚，别了，我至尊、至爱的冬！ </p>
+										<p>1．写出下列词语的近义词。 </p>
+										<p>悲怆( ) 舒缓( ) 清寒( ) </p>
+										<p>2．文中把北方的冬比作什么？ 为什么这样比喻？请在文中找出答案，用横线画出来。</p>
+										<p>3．默读最后一节，在括号里填上合适的词。再仿照文中划线句子，写出一个比喻句。 </p>
+										<p>4．冬是作者的至爱，那什么是你的至爱呢？说说自己最爱的一个季节，并简要谈谈理由。</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析：</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-li-content">
+									<div class="card-li-edit">
+										<p class="font-weight">练习：</p>
+										<p class="font-title">三月桃花水</p>
+										<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+										<p>1、理解短文内容填空。  </p>
+										<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+										<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+										<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+										<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+										<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+										<p>我看见： </p>
+										<p>我还看见：</p>
+										<p>5、写一句关于春天的谚语。</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析：</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">口语交际</div>
+								<div class="card-li-content">
+									<div class="card-li-content-label">
+										<span class="card-li-content-span"><img src="image/star_white.png"/><text>重点知识点1</text></span>
+										<span class="card-li-content-span-yellow-two">口语交际</span>
+									</div>
+									<div class="card-li-edit" contenteditable="false">
+										<p class="font-weight">要点梳理：</p>
+										<p>基本思路：表明观点—原因—总结</p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+								<div class="card-li-text">考点1-考点名称</div>
+								<div class="card-li-content">
+									<div class="card-li-edit">
+										<p class="font-weight">例题：</p>
+										<p>1. 口语交际：小李和小洋，为了一点小事，两个人在自习课上大声地争吵起来。假如你是班长，你该如何用委婉的语气进行劝阻？</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析：</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-li-content">
+									<div class="card-li-edit">
+										<p class="font-weight">例题：</p>
+										<p>1. 口语交际：小李和小洋，为了一点小事，两个人在自习课上大声地争吵起来。假如你是班长，你该如何用委婉的语气进行劝阻？</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="font-weight">答案解析：</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">小试牛刀</div>
+								<div class="card-li-content">
+									<p class="card-li-content-label">
+										<span class="card-li-content-span">1</span>
+										<!--<span>知识点1</span>-->
+										<span class="card-li-content-right">难度</span>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_normal.png"/>
+										<img src="image/Star_normal.png"/>
+									</p>
+									<div class="card-li-edit">
+										<p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="fontweight">思路解析</p>
+										<p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+										<div class="pull-right">
+											<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+											<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-li-content">
+									<p class="card-li-content-label">
+										<span class="card-li-content-span">2</span>
+										<!--<span>知识点2</span>-->
+										<span class="card-li-content-right">难度</span>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_normal.png"/>
+										<img src="image/Star_normal.png"/>
+									</p>
+									<div class="card-li-edit">
+										<p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="fontweight">思路解析</p>
+										<p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+										<div class="pull-right">
+											<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+											<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-li-content">
+									<p class="card-li-content-label">
+										<span class="card-li-content-span">3</span>
+										<!--<span>知识点3</span>-->
+										<span class="card-li-content-right">难度</span>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_normal.png"/>
+										<img src="image/Star_normal.png"/>
+									</p>
+									<div class="card-li-edit">
+										<p class="font-weight">3. 课外阅读：</p>
+										<p class="font-title">阿布夏日夜景</p>
+										<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+										<p>1、理解短文内容填空。  </p>
+										<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+										<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+										<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+										<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+										<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+										<p>我看见： </p>
+										<p>我还看见：</p>
+										<p>5、写一句关于春天的谚语。</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="fontweight">思路解析</p>
+										<p class="font-title">阿布夏日夜景</p>
+										<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+										<p>1、理解短文内容填空。  </p>
+										<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+										<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+										<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+										<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+										<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+										<p>我看见： </p>
+										<p>我还看见：</p>
+										<p>5、写一句关于春天的谚语。</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+										<div class="pull-right">
+											<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+											<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">学有所获</div>
+								<div class="card-li-content">
+									<div class="card-li-edit" contenteditable="false">
+										<p>1、用字母表示数、数量关系、运算定律及计算公式。</p>
+										<p>2、理解方程的意义和等式的性质，利用等式的性质解方程</p>
+										<p>3、掌握形如x±a=b和a(x±b)=c的方程的解法</p>
+										<p>4、根据题中的等量关系列方程解决实际问题  </p>
+										<p>5、理解实际问题中的有关和、差、倍的数量关系</p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">课后巩固</div>
+								<div class="card-li-content">
+									<p class="card-li-content-label">
+										<span class="card-li-content-span">1</span>
+										<span>知识点1</span>
+										<span class="card-li-content-right">难度</span>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_normal.png"/>
+										<img src="image/Star_normal.png"/>
+									</p>
+									<div class="card-li-edit">
+										<p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="fontweight">思路解析</p>
+										<p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+										<div class="pull-right">
+											<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+											<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-li-content">
+									<p class="card-li-content-label">
+										<span class="card-li-content-span">2</span>
+										<span>知识点2</span>
+										<span class="card-li-content-right">难度</span>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_normal.png"/>
+										<img src="image/Star_normal.png"/>
+									</p>
+									<div class="card-li-edit">
+										<p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="fontweight">思路解析</p>
+										<p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+										<div class="pull-right">
+											<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+											<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+										</div>
+									</div>
+								</div>
+								<div class="card-li-content">
+									<p class="card-li-content-label">
+										<span class="card-li-content-span">3</span>
+										<span>知识点3</span>
+										<span class="card-li-content-right">难度</span>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_selected.png"/>
+										<img src="image/Star_normal.png"/>
+										<img src="image/Star_normal.png"/>
+									</p>
+									<div class="card-li-edit">
+										<p class="font-weight">3. 课外阅读：</p>
+										<p class="font-title">阿布夏日夜景</p>
+										<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+										<p>1、理解短文内容填空。  </p>
+										<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+										<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+										<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+										<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+										<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+										<p>我看见： </p>
+										<p>我还看见：</p>
+										<p>5、写一句关于春天的谚语。</p>
+									</div>
+									<div class="card-li-edit-detail">
+										<p class="fontweight">思路解析</p>
+										<p class="font-title">阿布夏日夜景</p>
+										<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+										<p>1、理解短文内容填空。  </p>
+										<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+										<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+										<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+										<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+										<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+										<p>我看见： </p>
+										<p>我还看见：</p>
+										<p>5、写一句关于春天的谚语。</p>
+									</div>
+									<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+									<div class="card-li-content-footer clearfix">
+										<div class="pull-left">
+											<img src="image/normal.png"/>
+											<span>显示答案及详情</span>
+										</div>
+										<div class="pull-right">
+											<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+											<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+											<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--跳转步骤-->
+						<div class="btn-next row">
+							<div class="text">上一步</div>
+							<div class="text-active">下一步</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--第三步-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="card">
+						<!--步骤进度条-->
+						<div class="card-nav row">
+							<div class="nav-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="nav-image">
+									<span class="nav-span nav-span-white">1</span>
+									<img class="nav-icon" src="image/ok1.png"/>
+								</div>
+								<div class="nav-text nav-text-green">勾选知识点</div>
+							</div>
+							<div class="nav-line nav-line-green col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+							<div class="nav-item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+								<div class="nav-image">
+									<span class="nav-span nav-span-white">2</span>
+									<img class="nav-icon" src="image/ok1.png"/>
+								</div>
+								<div class="nav-text nav-text-green">整理讲义内容</div>
+							</div>
+							<div class="nav-line nav-line-green col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+							<div class="nav-item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="nav-image">
+									<span class="nav-span nav-span-white">3</span>
+									<img class="nav-icon" src="image/ing2.png"/>
+								</div>
+								<div class="nav-text nav-text-yellow">预览提交</div>
+							</div>
+						</div>
+						<div class="card-list row">
+							<div class="card-li">
+								<div class="card-li-label">课程主题</div>
+								<div class="card-li-content">
+									<div class="card-li-edit" contenteditable="true">
+										<p>请输入本次教学目标</p>
+									</div>
+									<!--<div class="card-li-btn"><span>+继续编辑</span></div>-->
+								</div>
+								<!--<textarea class="card-li-textarea" name="theme" placeholder="请输入本次教学目标"></textarea>-->
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">教学目标</div>
+								<div class="card-li-content">
+									<div class="card-li-edit" contenteditable="false">
+										<p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+										<p>2、设计费老司机</p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+							</div>
+							<div class="card-li">
+								<div class="card-li-label">重点难点</div>
+								<div class="card-li-content">
+									<div class="card-li-edit" contenteditable="false">
+										<p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+										<p>2、设计费老司机</p>
+									</div>
+									<div class="card-li-btn"><span>+继续编辑</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="card-items">
+							<div class="card-list row">
+								<div class="card-li">
+									<div class="card-li-item">
+										<div class="card-li-content-header clearfix">
+											<div class="pull-left">
+												<div class="card-li-label">复习回顾</div>
+											</div>
+											<div class="pull-right clearfix">
+												<span class="card-li-content-header-item active">
+													<img src="image/selected.png"/>
+													<span>上节课错题回顾</span>
+												</span>
+												<span class="card-li-content-header-item active">
+													<img src="image/selected.png"/>
+													<span>上节课作业回顾</span>
+												</span>
+												<span class="card-li-content-header-item">
+													<img src="image/normal.png"/>
+													<span>自定义加题</span>
+												</span>
+											</div>
+										</div>	
+									</div>
+									<div class="card-li-content">
+										<div class="card-li-edit" contenteditable="false">
+											<p class="card-li-title-label">错题回顾</p>
+											<p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+											<p>2、设计费老司机</p>
+										</div>
+										<div class="card-li-edit" contenteditable="false">
+											<p class="card-li-title-label">作业回顾</p>
+											<p>1、认识用字母表示数的作用，发展符号意识，能够用字母表示学过的运算定律和计算公式。</p>
+											<p>2、设计费老司机</p>
+										</div>
+										<div class="card-li-btn"><span>+继续编辑</span></div>
+									</div>
+								</div>
+								<div class="card-li">
+									<div class="card-li-label">同步训练</div>
+									<!--知识点1-->
+									<div class="card-li-content">
+										<div class="card-li-content-label">
+											<span class="card-li-content-span">知识点1</span>
+											<span class="card-li-content-span-yellow">重点字词</span>
+										</div>
+										<div class="card-li-edit">
+											<p class="font-weight">看拼音，写词语。</p>
+											<p>liáng péng (        ) zhuāng shì (       ) qiáo jiàn (       )</p>
+											<p>shuài lǐng (        ) mì shí (       ) sǒng lì (       )</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析:</p>
+											<p>liáng péng (        ) zhuāng shì (       ) qiáo jiàn (       )</p>
+											<p>shuài lǐng (        ) mì shí (       ) sǒng lì (       )</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>在讲义显示答案及解析</span>
+											</div>
+										</div>
+									</div>
+									<!--知识点2-->
+									<div class="card-li-content">
+										<div class="card-li-content-label">
+											<span class="card-li-content-span">知识点2</span>
+											<span class="card-li-content-span-yellow">多音字词</span>
+										</div>
+										<div class="card-li-edit">
+											<p class="font-weight">多音字组词。</p>
+											<p>冠：guān（  ）；guàn（  ）  </p>
+											<p>场：chǎng（  ）；cháng（  ）</p>
+											<p>结：jiē（  ）； jié（  ）</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析：</p>
+											<p>冠：guān（ 鸡冠 ）；guàn（ 冠军 ）  </p>
+											<p>场：chǎng（ 场面 ）；cháng（ 场景 ）</p>
+											<p>结：jiē（ 结实 ）； jié（ 结网 ）</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>在讲义显示答案及解析</span>
+											</div>
+										</div>
+									</div>
+									<!--知识点3-->
+									<div class="card-li-content">
+										<div class="card-li-content-label">
+											<span class="card-li-content-span">知识点3</span>
+											<span class="card-li-content-span-yellow">词语搭配</span>
+										</div>
+										<div class="card-li-edit">
+											<p class="font-weight">我会填词语。</p>
+											<p>明媚的（ ） 明艳的（ ） </p>
+											<p>明丽的（ ） 明亮的（ ）</p>
+											<p>温暖的（ ） 温和的（ ）</p>
+											<p>温柔的（ ） 温馨的（ ）</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析：</p>
+											<p>明媚的（ ） 明艳的（ ） </p>
+											<p>明丽的（ ） 明亮的（ ）</p>
+											<p>温暖的（ ） 温和的（ ）</p>
+											<p>温柔的（ ） 温馨的（ ）</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>在讲义显示答案及解析</span>
+											</div>
+										</div>
+									</div>
+									<!--知识点4-->
+									<div class="card-li-content">
+										<div class="card-li-content-label">
+											<span class="card-li-content-span">知识点4</span>
+											<span class="card-li-content-span-yellow">课内阅读</span>
+										</div>
+										<div class="card-li-edit">
+											<p class="font-weight">课内阅读。</p>
+											<p>夜晚,我在灯下写稿,一只飞蛾不停地在我头顶上飞来飞去,骚扰着我。趁它停下的时候,我一伸手捉住了它。只要我的手指稍一用力,它就不能动弹_____了。但它挣扎着,极力鼓动双翅,我感到一股生命的力量在我手中______，那样________！那样______！飞蛾那种求生的_____令我______,我忍不住放了它！  </p>
+											<p>1、给文中的加线字注音,并按原文填空。 </p>
+											<p>2、“鼓动”一词在文中的意思是（ ） A、扇动 B、煽动 </p>
+											<p>3、文中感叹号的作用是________。 </p>
+											<p>4、“我忍不住放了它！”这句话的含义是（ ）</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析：</p>
+											<p>夜晚,我在灯下写稿,一只飞蛾不停地在我头顶上飞来飞去,骚扰着我。趁它停下的时候,我一伸手捉住了它。只要我的手指稍一用力,它就不能动弹_____了。但它挣扎着,极力鼓动双翅,我感到一股生命的力量在我手中______，那样________！那样______！飞蛾那种求生的_____令我______,我忍不住放了它！  </p>
+											<p>1、给文中的加线字注音,并按原文填空。 </p>
+											<p>2、“鼓动”一词在文中的意思是（ ） A、扇动 B、煽动 </p>
+											<p>3、文中感叹号的作用是________。 </p>
+											<p>4、“我忍不住放了它！”这句话的含义是（ ）</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>在讲义显示答案及解析</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-li">
+									<div class="card-li-label">专题拓展</div>
+									<div class="card-li-text">
+										<div class="card-li-text-btn">句子</div>
+										<div class="card-li-text-btn">欣怡小姐姐大姐姐大大姐姐大大大姐姐姐</div>
+									</div>
+									<div class="card-li-content">
+										<div class="card-li-content-label">
+											<span class="card-li-content-span"><img src="image/star_white.png"/><text>重点知识点</text></span>
+											<span class="card-li-content-span-yellow-two">扩句</span>
+										</div>
+										<div class="card-li-edit" contenteditable="false">
+											<p class="font-weight">要点梳理：</p>
+											<p>(1)想象扩句法。  </p>
+											<p>(2)描述扩句法。</p>
+											<p>(3)说明扩句法</p>
+										</div>
+										<div class="card-li-btn"><span>+继续编辑</span></div>
+									</div>
+									<div class="card-li-text">考点1-扩句</div>
+									<div class="card-li-content">
+										<div class="card-li-edit">
+											<p class="font-weight">例题：</p>
+											<p>1. 扩句：他瞪了她。</p>
+											<p>2. 扩句：他买水。</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析：</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+										</div>
+									</div>
+									<div class="card-li-content">
+										<div class="card-li-edit">
+											<p class="font-weight">练习：</p>
+											<p>1. 幼苗生长。 </p>
+											<p>2. 奶奶打水。</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析：</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-li">
+									<div class="card-li-label">课外阅读</div>
+									<div class="card-li-content">
+										<div class="card-li-content-label">
+											<span class="card-li-content-span"><img src="image/star_white.png"/><text>重点知识点1</text></span>
+											<span class="card-li-content-span-yellow-two">写景阅读</span>
+										</div>
+										<div class="card-li-edit" contenteditable="false">
+											<p class="font-weight">要点梳理：</p>
+											<p>1.了解写景文章的类别    </p>
+											<p>2.明确写景的描写顺序</p>
+											<p>3.理解写景文章的层次</p>
+											<p>4.体会写景文的思想感情 </p>
+										</div>
+										<div class="card-li-btn"><span>+继续编辑</span></div>
+									</div>
+									<div class="card-li-text">考点1-写景阅读</div>
+									<div class="card-li-content">
+										<div class="card-li-edit">
+											<p class="font-weight">例题：</p>
+											<p>当瑟瑟的秋风捋走最后一颗果实，当滴滴秋雨祭奠完那季节的悲怆，自然，就踏着绵软的落叶飘然入冬了，一路紧赶的脚步，此时，舒缓了许多。北方的冬，有如晚秋的满月，清寒的妆容，彻骨的明亮，沁心的朗照。这都是因为冬的简约：湛蓝的天空，再没了暗云的翻滚，呐喊的雷声，闪电的狰狞；裸露的大地挺起它宽厚的胸膛，坦坦荡荡地由近及远地向天边排去，荡然涤尽了春的悸动，夏的浮躁，秋的欲望，恬淡着性情，悠远着生命，还原着万生万物最原始的空灵与寂静。 冬的空灵，拒绝花草的装点，不为五谷折腰，更无需果香扬名，以冰为品，用雪作魂，铮铮铁骨，铿锵气概，让群山仰止，让河流驻足！ 面对高举的苍穹，裸露的大地，你终可以脱去一身的疲惫。当凛冽的寒冬冰封了那一季的风雨，才木然了红了樱桃，绿了芭蕉，才淡出了绿肥红瘦的争闹。任凭你蘸着晶莹，把它们辑成篇篇童话，随手抛向空中，碎成片片雪花，纷扬飘舞，挂满枝头，落满山坡，厚厚地铺满心底的世界。 冰消时如滴翠，悄然无声；雪融时如玉碎，( )。拥着至纯、至诚，别了，我至尊、至爱的冬！ </p>
+											<p>1．写出下列词语的近义词。 </p>
+											<p>悲怆( ) 舒缓( ) 清寒( ) </p>
+											<p>2．文中把北方的冬比作什么？ 为什么这样比喻？请在文中找出答案，用横线画出来。</p>
+											<p>3．默读最后一节，在括号里填上合适的词。再仿照文中划线句子，写出一个比喻句。 </p>
+											<p>4．冬是作者的至爱，那什么是你的至爱呢？说说自己最爱的一个季节，并简要谈谈理由。</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析：</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+										</div>
+									</div>
+									<div class="card-li-content">
+										<div class="card-li-edit">
+											<p class="font-weight">练习：</p>
+											<p class="font-title">三月桃花水</p>
+											<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+											<p>1、理解短文内容填空。  </p>
+											<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+											<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+											<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+											<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+											<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+											<p>我看见： </p>
+											<p>我还看见：</p>
+											<p>5、写一句关于春天的谚语。</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析：</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-li">
+									<div class="card-li-label">口语交际</div>
+									<div class="card-li-content">
+										<div class="card-li-content-label">
+											<span class="card-li-content-span"><img src="image/star_white.png"/><text>重点知识点1</text></span>
+											<span class="card-li-content-span-yellow-two">口语交际</span>
+										</div>
+										<div class="card-li-edit" contenteditable="false">
+											<p class="font-weight">要点梳理：</p>
+											<p>基本思路：表明观点—原因—总结</p>
+										</div>
+										<div class="card-li-btn"><span>+继续编辑</span></div>
+									</div>
+									<div class="card-li-text">考点1-考点名称</div>
+									<div class="card-li-content">
+										<div class="card-li-edit">
+											<p class="font-weight">例题：</p>
+											<p>1. 口语交际：小李和小洋，为了一点小事，两个人在自习课上大声地争吵起来。假如你是班长，你该如何用委婉的语气进行劝阻？</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析：</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+										</div>
+									</div>
+									<div class="card-li-content">
+										<div class="card-li-edit">
+											<p class="font-weight">例题：</p>
+											<p>1. 口语交际：小李和小洋，为了一点小事，两个人在自习课上大声地争吵起来。假如你是班长，你该如何用委婉的语气进行劝阻？</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="font-weight">答案解析：</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+											<p>题目分析——文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-li">
+									<div class="card-li-label">小试牛刀</div>
+									<div class="card-li-content">
+										<p class="card-li-content-label">
+											<span class="card-li-content-span">1</span>
+											<!--<span>知识点1</span>-->
+											<span class="card-li-content-right">难度</span>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_normal.png"/>
+											<img src="image/Star_normal.png"/>
+										</p>
+										<div class="card-li-edit">
+											<p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="fontweight">思路解析</p>
+											<p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+											<div class="pull-right">
+												<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+												<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+											</div>
+										</div>
+									</div>
+									<div class="card-li-content">
+										<p class="card-li-content-label">
+											<span class="card-li-content-span">2</span>
+											<!--<span>知识点2</span>-->
+											<span class="card-li-content-right">难度</span>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_normal.png"/>
+											<img src="image/Star_normal.png"/>
+										</p>
+										<div class="card-li-edit">
+											<p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="fontweight">思路解析</p>
+											<p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+											<div class="pull-right">
+												<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+												<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+											</div>
+										</div>
+									</div>
+									<div class="card-li-content">
+										<p class="card-li-content-label">
+											<span class="card-li-content-span">3</span>
+											<span>知识点3</span>
+											<span class="card-li-content-right">难度</span>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_normal.png"/>
+											<img src="image/Star_normal.png"/>
+										</p>
+										<div class="card-li-edit">
+											<p class="font-weight">3. 课外阅读：</p>
+											<p class="font-title">阿布夏日夜景</p>
+											<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+											<p>1、理解短文内容填空。  </p>
+											<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+											<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+											<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+											<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+											<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+											<p>我看见： </p>
+											<p>我还看见：</p>
+											<p>5、写一句关于春天的谚语。</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="fontweight">思路解析</p>
+											<p class="font-title">阿布夏日夜景</p>
+											<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+											<p>1、理解短文内容填空。  </p>
+											<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+											<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+											<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+											<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+											<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+											<p>我看见： </p>
+											<p>我还看见：</p>
+											<p>5、写一句关于春天的谚语。</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+											<div class="pull-right">
+												<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+												<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-li">
+									<div class="card-li-label">学有所获</div>
+									<div class="card-li-content">
+										<div class="card-li-edit" contenteditable="false">
+											<p>1、用字母表示数、数量关系、运算定律及计算公式。</p>
+											<p>2、理解方程的意义和等式的性质，利用等式的性质解方程</p>
+											<p>3、掌握形如x±a=b和a(x±b)=c的方程的解法</p>
+											<p>4、根据题中的等量关系列方程解决实际问题  </p>
+											<p>5、理解实际问题中的有关和、差、倍的数量关系</p>
+										</div>
+										<div class="card-li-btn"><span>+继续编辑</span></div>
+									</div>
+								</div>
+								<div class="card-li">
+									<div class="card-li-label">课后巩固</div>
+									<div class="card-li-content">
+										<p class="card-li-content-label">
+											<span class="card-li-content-span">1</span>
+											<!--<span>知识点1</span>-->
+											<span class="card-li-content-right">难度</span>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_normal.png"/>
+											<img src="image/Star_normal.png"/>
+										</p>
+										<div class="card-li-edit">
+											<p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="fontweight">思路解析</p>
+											<p>1. 陈述句改成反问句：我们每一个人需要的是这种精神。</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+											<div class="pull-right">
+												<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+												<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+											</div>
+										</div>
+									</div>
+									<div class="card-li-content">
+										<p class="card-li-content-label">
+											<span class="card-li-content-span">2</span>
+											<!--<span>知识点2</span>-->
+											<span class="card-li-content-right">难度</span>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_normal.png"/>
+											<img src="image/Star_normal.png"/>
+										</p>
+										<div class="card-li-edit">
+											<p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="fontweight">思路解析</p>
+											<p>2. 反问句改成陈述句：我们吃的穿的，哪一样能离开群众的支持？</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+											<div class="pull-right">
+												<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+												<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+											</div>
+										</div>
+									</div>
+									<div class="card-li-content">
+										<p class="card-li-content-label">
+											<span class="card-li-content-span">3</span>
+											<!--<span>知识点3</span>-->
+											<span class="card-li-content-right">难度</span>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_selected.png"/>
+											<img src="image/Star_normal.png"/>
+											<img src="image/Star_normal.png"/>
+										</p>
+										<div class="card-li-edit">
+											<p class="font-weight">3. 课外阅读：</p>
+											<p class="font-title">阿布夏日夜景</p>
+											<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+											<p>1、理解短文内容填空。  </p>
+											<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+											<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+											<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+											<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+											<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+											<p>我看见： </p>
+											<p>我还看见：</p>
+											<p>5、写一句关于春天的谚语。</p>
+										</div>
+										<div class="card-li-edit-detail">
+											<p class="fontweight">思路解析</p>
+											<p class="font-title">阿布夏日夜景</p>
+											<p>是什么声音,像一串小铃铛,轻轻地走过村边？是什么光芒,像一匹明洁的丝绸,映照着蓝天？ 啊,河流醒来了！三月的桃花木,舞动着绚丽的朝霞,向前流淌。有一千朵樱花,点点洒在了河面；有一万个小酒窝，在水中回旋。 三月的桃花木,是春天的竖琴。 每一条波纹,都是一根轻柔的弦。那细白的浪花,敲打着有节秦的鼓点；那忽大忽小的水波声,应和着田野上拖拉机的鸣响；那纤细的低语,是在和刚刚从雪被里伸出头来的麦苗谈心；那碰着岸边石块的叮咚声,像是大路上车轮滚过的铃声；那急流的水浪声,是在催促着村民们开犁播种啊！ 三月的桃花木,是春天的明镜。 它看见燕子飞过天空,翅膀上裹着白云；它看见垂柳披上了长发,如雾如烟；它看见一群姑娘来到河边,水底立刻浮起一片片花瓣；边疆看见村庄上空,很早很早,就升起了袅袅炊烟…… 比金子还贵啊,三月桃花水！ 比银子还亮啊,三月桃花水！ 啊，地上草如茵,两岸柳如眉。三月桃花木,叫人多沉醉。啊！掬一捧,品一口,让这三月的桃花水盛满我们心灵的酒杯。  </p>
+											<p>1、理解短文内容填空。  </p>
+											<p>（1）第一自然段作者把（ ）比作了铃铛、丝绸，写出了河水（ ）的情景。</p>
+											<p>（2）“三月的桃花水，舞动着绮丽的朝霞，向前流淌。”这是一种（ ）的写法，写出了（ ）。</p>
+											<p>2、感悟全文，请你从三个方面说说桃花水的美。 </p>
+											<p>3、看到这么美的三月桃花水作者会是怎样的心情？ </p>
+											<p>4、“三月的桃花水，是春天的明镜。”说说你从明镜中看到了哪些景物。  </p>
+											<p>我看见： </p>
+											<p>我还看见：</p>
+											<p>5、写一句关于春天的谚语。</p>
+										</div>
+										<div class="card-li-content-more"><span class="span-text">展开答案及解析</span><span class="glyphicon glyphicon-chevron-down"></span></div>
+										<div class="card-li-content-footer clearfix">
+											<div class="pull-left">
+												<img src="image/normal.png"/>
+												<span>显示答案及详情</span>
+											</div>
+											<div class="pull-right">
+												<span class="card-li-content-btn-red"><span class="glyphicon glyphicon-arrow-up"></span>加难</span>
+												<span class="card-li-content-btn-green"><span class="glyphicon glyphicon-arrow-down"></span>减易</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-refresh"></span>换一题</span>
+												<span class="card-li-content-btn-gray"><span class="glyphicon glyphicon-trash"></span>删除</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--跳转步骤-->
+						<div class="btn-next row">
+							<div class="text">继续选题</div>
+							<div class="text-active">提交讲义</div>
+						</div>
+					</div>
+				</div>
+			</div>
+  	</div>
+  	<!--<div class="fixed-box">展开</div>-->
+  	<div class="fixed-container">
+  		<div class="fixed-wrapper">
+  			<div class="fixed-title">讲义内容</div>
+  			<div class="fixed-items">
+  				<div class="fixed-item">
+  					<span class="fixed-item-text-gray">温故知新</span>
+  					<span class="fixed-item-circle">+</span>
+  					<span class="fixed-item-text">8</span>
+  					<span class="fixed-item-circle">-</span>
+  				</div>
+  				<div class="fixed-item">
+  					<span class="fixed-item-text-gray">知识精讲</span>
+  					<span class="fixed-item-circle">+</span>
+  					<span class="fixed-item-text">8</span>
+  					<span class="fixed-item-circle">-</span>
+  				</div>
+  				<div class="fixed-item">
+  					<span class="fixed-item-text-gray">小试牛刀</span>
+  					<span class="fixed-item-circle">+</span>
+  					<span class="fixed-item-text">8</span>
+  					<span class="fixed-item-circle">-</span>
+  				</div>
+  				<div class="fixed-item">
+  					<span class="fixed-item-text-gray">课后巩固</span>
+  					<span class="fixed-item-circle">+</span>
+  					<span class="fixed-item-text">8</span>
+  					<span class="fixed-item-circle">-</span>
+  				</div>
+  			</div>
+  			<div class="fixed-text">总计：12题</div>
+  			<div class="fixed-content">
+  				<div class="fixed-text">平均难度</div>
+  				<div class="fixed-image">
+  					<img src="image/Star_selected.png"/>
+  					<img src="image/Star_selected.png"/>
+  					<img src="image/Star_selected.png"/>
+  				</div>
+  				<div class="fixed-text">较难 50%</div>
+  				<div class="fixed-text">简易 30%</div>
+  			</div>
+  			<div class="fixed-buttons">
+  				<div class="fixed-btn-active">提交讲义</div>
+  				<div class="fixed-btn">继续选题</div>
+  			</div>
+  		</div>
+  		<div class="fixed-right">
+  			<div class="fixed-right-text">>></div>
+  		</div>
+  	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(document).on('click', '.card-li-btn span', function() {
+    			if ($(this).text() == '+继续编辑') {
+	    			$(this).parents('.card-li-content').find('.card-li-edit').attr("contenteditable", true);
+	    			$(this).text('+完成编辑')
+    			} else {
+    				$(this).parents('.card-li-content').find('.card-li-edit').attr('contenteditable', false);
+	    			$(this).text('+继续编辑')
+	    			console.log($(this).parents('.card-li-content').find('.card-li-edit').html())
+    			}
+    		})
+    		
+    		$(document).on('click', '.sub-item', function() {
+    			$(this).addClass('active').siblings().removeClass('active')
+    		})
+    		
+    		$('.fixed-right-text').click(function(){
+    			if (!$(this).parent().hasClass('active')) {
+    				$(this).text('<<')
+    			} else {
+	    			$(this).text('>>')
+    			}
+    			$(this).parent().toggleClass('active')
+    			$(this).parents('.fixed-container').find('.fixed-wrapper').toggleClass('active')
+    		})
+    		
+    		$('.sub-max').click(function(){
+    			if ($(this).prev().hasClass('active')) {
+    				$(this).find('.sub-max-text').text('展开')
+    			} else {
+    				$(this).find('.sub-max-text').text('收起')
+    			}
+    			$(this).prev().toggleClass('active')
+    			$(this).toggleClass('active')
+    		})
+    		
+    		$('.card-li-content-more').click(function(){
+    			if ($(this).prev('.card-li-edit-detail').hasClass('active')) {
+    				$(this).find('.span-text').text('展开答案及解析')
+    			} else {
+    				$(this).find('.span-text').text('收起答案及解析')
+    			}
+    			$(this).prev('.card-li-edit-detail').toggleClass('active')
+    			$(this).toggleClass('active')
+    		})
+    		
+    		
+    	})
+    </script>
+  </body>
+</html>
